@@ -145,16 +145,20 @@ head(df)
 # crop to surveyed gbr reefs (2016 and 2024)
 
 # max DHW 2016 / 2024
-sst.max16 <- st_read("data/noaa_sst/GBR_REEFS/gbr.max.2016.shp")
-sst.max24 <- st_read("data/noaa_sst/GBR_REEFS/gbr.max.2024.shp")
+sst.max16 <- st_read("data/noaa_sst/GBR/gbr.max.2016.shp") 
+sst.max24 <- st_read("data/noaa_sst/GBR/gbr.max.2024.shp")
 sst16 <- cbind(longitude=st_coordinates(sst.max16)[,1], latitude=st_coordinates(sst.max16)[,2], st_drop_geometry(sst.max16))
 sst24 <- cbind(longitude=st_coordinates(sst.max24)[,1], latitude=st_coordinates(sst.max24)[,2], st_drop_geometry(sst.max24))
 
 # transect coords
-coord24 <- read.csv("data/info/sitecoords2024.csv") 
+coord24 <- read.csv("data/info/sitecoordsX.csv") 
 coord16 <- read.csv("data/info/sitecoords2016.csv") 
 head(coord24)
-unique(coord24$Transect_code)
+
+#coord24[coord24$Transect_code=="MOO_B2_C3",]
+#coord24[coord24$Transect_code=="HER_B2_C3",]
+#coord24[coord24$Transect_code=="MOO_B3_S1",]
+
 
 # coord corrections
 coord24[coord24$Reef=="Thetford","GPS.S"] <- 16.798000
@@ -163,6 +167,8 @@ coord24$GPS.E[coord24$GPS.S==23.83849] <- 151.8989 # wistari wrong?
 coord24$GPS.S[coord24$GPS.S==23.83849] <- 23.46908 
 coord24$GPS.E[coord24$GPS.S==13.97648] <- 144.4389 # davie wrong
 coord24$GPS.S[coord24$GPS.S==13.97648] <- 13.96604
+
+
 
 # sites have coordID
 coord24$coordID <- paste(-coord24$GPS.S, coord24$GPS.E)
@@ -201,6 +207,7 @@ for(i in 1:nrow(coord16)){
 lat <- coord16[i, "revised_lat"]
 lon <- coord16[i, "revised_long"]
 ord1 <- grids16[order(grids16$latitude, decreasing=F),]
+#latmatch <- ord1[which.min(abs(ord1$latitude - lat)),"latitude"]
 latmatch <- ord1[findInterval(lat, ord1$latitude),"latitude"]
 ord2 <- grids16[order(grids16$longitude, decreasing=F),]
 lonmatch <- ord2[findInterval(lon, ord2$longitude),"longitude"]
