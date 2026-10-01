@@ -91,9 +91,9 @@ geom_hline(yintercept=0, size=0.1)+
 #geom_smooth(data=dfm2, aes(dhw, change_use, col=year), method="lm", formula=y~poly(x,2), size=0.4, show.legend=FALSE)+
 geom_line(data=fit16.2, aes(dhw, fit), col=col16)+
 geom_ribbon(data=fit16.2, aes(x=dhw, ymin=fit-(se*1.95), ymax=fit+(se*1.95)), alpha=0.2, fill=col16)+
-geom_line(data=fit24.2, aes(max.dhw, fit), col="black")+
-geom_ribbon(data=fit24.2, aes(x=max.dhw, ymin=fit-(se*1.95), ymax=fit+(se*1.95)), alpha=0.2)+
-geom_point(data=dfm2, aes(dhw, change_use, col=year, shape=year), size=1, stroke=0.3)+
+geom_line(data=fit24.2, aes(dhw, fit), col="black")+
+geom_ribbon(data=fit24.2, aes(x=dhw, ymin=fit-(se*1.95), ymax=fit+(se*1.95)), alpha=0.2)+
+geom_point(data=lmort, aes(dhw, change_use, col=year, shape=year), size=1, stroke=0.3)+
 labs(x="DHW (°C Weeks)", y="Change in coral cover (%)")+
 scale_y_continuous(breaks=brks, labels=labs)+
 scale_colour_manual(values=c(col16, "black"))+
@@ -101,10 +101,10 @@ scale_shape_manual(values=c(4, 16))+
 theme_classic()+mtheme
 p2
 
-plot_grid(
+figS8<-plot_grid(
 plot_grid(bplot2, effplot+theme(axis.line=element_line(size=0.25)), labels=c("A", "B")),
 plot_grid(f1, x1, p2, nrow=1, rel_widths=c(1,1,2), labels=c("C", "D","E")),ncol=1)
-
+figS8
 #   ggsave("figs/fig2code.jpg", fig2, height=6.2, width=5.3)
 
 

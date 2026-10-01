@@ -84,8 +84,8 @@ labs(x="Years since last\nevent > 6 DHW", y="% tabular Acropora")+
 theme_classic()+theme
 lS3
 
-figS8 <- plot_grid(fS1, lS1, fS2, lS2, fS3, lS3, labels=c("A", "B", "C", "D", "E"), label_size=9, nrow=3, align="hv", axis="lr")
-figS8
+figS7 <- plot_grid(fS1, lS1, fS2, lS2, fS3, lS3, labels=c("A", "B", "C", "D", "E"), label_size=9, nrow=3, align="hv", axis="lr")
+figS7
 
 
 #     ggsave( "figs/supplement/figS8.jpg",figS8, height=7, width=5.5)

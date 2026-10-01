@@ -59,8 +59,8 @@ guides(size="none", fill=guide_colourbar(title="% bleaching"))+
 theme_void()
 nmdsplot2cX
 
-figS6 <- plot_grid(nmdsplot2cX,nmdsplot1)
-figS6
+figS4 <- plot_grid(nmdsplot2cX,nmdsplot1)
+figS4
 
 #     ggsave( "figs/supplement/figS6.jpg",figS6, height=2, width=6)
 

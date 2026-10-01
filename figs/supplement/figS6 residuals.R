@@ -52,10 +52,11 @@ strip.text.y.left=element_text(size=8, angle=0, hjust=1),
  axis.text.y=element_blank(), axis.ticks=element_blank(),axis.title.x=element_text(size=9), panel.margin.y=unit(2, "mm"), panel.background=element_rect(fill="grey96"), axis.title.y=element_blank())
 
 
+head(m24)
+m24$region2 <- sres$region2[match(m24$reef, sres$Reef)]
+m24$region2 <- factor(m24$region2, levels=regions)
 
-ggplot(smort, aes(region2, Lchange))+geom_boxplot()+geom_hline(yintercept=0, size=0.1)
-
-mortregions <- ggplot(smort[smort$Zone %in% "Crest",], aes(Lchange, Reef))+
+mortregions <- ggplot(m24, aes(Lchange, reef))+
 geom_vline(xintercept=0)+
 scale_fill_viridis(discrete=T, direction=-1, begin=0, end=0.7)+
 guides(fill="none")+
@@ -70,9 +71,9 @@ strip.text.y.left=element_text(size=8, angle=0, hjust=1),
  axis.text.y=element_blank(), axis.ticks=element_blank(),axis.title.x=element_text(size=9), panel.margin.y=unit(2, "mm"), panel.background=element_rect(fill="grey96"), axis.title.y=element_blank())
 mortregions
 
-figS7 <- plot_grid(plot_grid(residb, resid1, resid2, labels=c("A", "B", "C"), label_size=9, nrow=1),
+figS6 <- plot_grid(plot_grid(residb, resid1, resid2, labels=c("A", "B", "C"), label_size=9, nrow=1),
 plot_grid(diffplot+labs(x=""), mortregions, labels=c("D", "E"),label_size=9), ncol=1)
 
-figS7
+figS6
 
 #     ggsave( "figs/supplement/figS7.jpg",figS7, height=4, width=6.5)

@@ -81,8 +81,10 @@ labs(x="Degree Heating Weeks", y="% recent mortality")+
 theme_classic()+theme(legend.title=element_blank())
 zones4
 
+lmort2 <- read.csv("data/mortality.csv")
+m24b <- lmort2[lmort2$year %in% "2024",] 
 
-zones5 <-ggplot(smort, aes(max.dhw, Lchange, col=Zone))+
+zones5 <-ggplot(m24b, aes(dhw, Lchange, col=zone))+
 geom_hline(yintercept=0, size=0.1)+
 geom_point(size=0.5, shape=21)+
 geom_smooth(method="lm", size=0.5)+

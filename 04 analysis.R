@@ -222,6 +222,11 @@ geom_text(data=mdsvectors, aes(MDS1, MDS2, label=lab2), hjust=ifelse(mdsvectors$
 source("figs/fig1.R")
 fig1
 
+# --------------------------------- # supplement
+
+source("figs/supplement/figS1 cov change.R")
+FigS1
+
 # --------------------------------- # model bleaching
 
 library("betareg")
@@ -593,6 +598,14 @@ labs(x="Change in % Acropora\n(2016-2024)", y="deviation from expected\nbleachin
 source("figs/fig2.R")
 fig2
 
+# --------------------------------- # supplement
+
+source("figs/supplement/figS4 nmds.R")
+figS4
+
+source("figs/supplement/figS5 hughes21.R")
+figS5
+
 # --------------------------------- # heatwave history (maps)
 
 dhw <- read.csv("data/noaa_sst/sst_gbr.csv") # same as longtermgrids (tyears) but all grids
@@ -729,6 +742,11 @@ heatplot
 source("figs/fig3.R")
 fig3
 
+# --------------------------------- # supplement
+
+source("figs/supplement/FigS7 frequency.R")
+figS7
+
 # --------------------------------- # long-term mortality
 
 lmort <- read.csv("data/mortality.csv")
@@ -737,7 +755,9 @@ head(lmort)
 
 m16 <- lmort[lmort$year %in% "2016",]
 m24 <- lmort[lmort$year %in% "2024",] # sitesC
-#m24 <- m24[m24$Zone %in% "Crest",] # m24
+
+m24 <- m24[m24$zone %in% "Crest",] 
+lmort <- lmort[lmort$zone %in% "Crest",]
 
 labs=c(-90, -70, -50, -30, 0, 30)
 brks <- 0.432 * log(labs+99.91) - 1.991 
@@ -857,8 +877,20 @@ geom_jitter(aes(fill=dhw), shape=21, height=0, width=0.1, stroke=0.1)+
 scale_fill_viridis(option="B")+
 scale_y_continuous(breaks=brks, labels=labs)
 
+# --------------------------------- # fig 4
+
 source("figs/fig4.R")
 fig4
 
+# --------------------------------- # supplement
+
+source("figs/supplement/FigS3 zones.R")
+FigS3
+
+source("figs/supplement/FigS6 residuals.R")
+figS6
+
+source("figs/supplement/figS8 sensitivity.R")
+figS8
 
 

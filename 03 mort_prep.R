@@ -180,11 +180,11 @@ summary(lm(log_change~AC))
 # --------------------------------- # combine data? 
 
 head(dfm)
-sitesC <- smort[smort$Zone %in% c("Crest"),]
-sitesC <- aggregate(.~Site+Region+Reef+sumN+tlast+max.dhw, subset(sitesC, select=-c(Zone)), mean)
+sitesC <- smort#[smort$Zone %in% c("Crest"),] #subset(sitesC, select=-c(Zone))
+sitesC <- aggregate(.~Site+Region+Reef+sumN+tlast+max.dhw+Zone, sitesC, mean)
 
-dfm2 <- rbind(data.frame(reef=dfm$Reef, site=NA, bl=dfm$bl, dhw=dfm$dhw, cov1=dfm$aprC, cov2=dfm$octC, Achange=dfm$Achange, Lchange=dfm$Lchange, year="2016", acro=dfm$acro, por=dfm$por),
-data.frame(reef=sitesC$Reef, site=sitesC$Site, bl=sitesC$pbleach*100, dhw=sitesC$max.dhw, cov1=sitesC$Apr, cov2=sitesC$Oct, Achange=sitesC$Achange, Lchange=sitesC$Lchange, year="2024", acro=sitesC$acro, por=sitesC$por))
+dfm2 <- rbind(data.frame(reef=dfm$Reef, site=NA, zone="Crest",bl=dfm$bl, dhw=dfm$dhw, cov1=dfm$aprC, cov2=dfm$octC, Achange=dfm$Achange, Lchange=dfm$Lchange, year="2016", acro=dfm$acro, por=dfm$por),
+data.frame(reef=sitesC$Reef, site=sitesC$Site, zone=sitesC$Zone, bl=sitesC$pbleach*100, dhw=sitesC$max.dhw, cov1=sitesC$Apr, cov2=sitesC$Oct, Achange=sitesC$Achange, Lchange=sitesC$Lchange, year="2024", acro=sitesC$acro, por=sitesC$por))
 head(dfm2)
 
 dfm$change_use <- dfm$Lchange
@@ -197,7 +197,4 @@ sitesC$cov2 <- sitesC$Oct
 
 
 #  write.csv(dfm2, "data/mortality.csv")
-
-
-
 
