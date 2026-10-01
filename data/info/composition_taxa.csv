@@ -1,0 +1,66 @@
+,taxon,group,label,label2,label3,align
+1,Acropora...Tabular,HC,Acropora tabular,Acropora tabular,Acropora,tabular_Acropora
+2,Acropora...Staghorn,HC,Acropora staghorn,Acropora staghorn,Acropora,staghorn_Acropora
+3,Acropora...other,HC,Acropora other,Acropora other,Acropora other,other_Acropora
+4,Astreopora,HC,Astreopora,Astreo.,,other_scleractinians
+5,Isopora,HC,Isopora,Isopora,Isopora,Isopora
+6,Montipora,HC,Montipora,Montipora,Montipora,Montipora
+7,Pocillopora,HC,Pocillopora,Pocillopora,Pocillopora,Pocillopora
+8,Seriatopora,HC,Seriatopora,Seriatopora,,Seriatopora
+9,Stylophora,HC,Stylophora,Stylo.,,Stylophora
+10,Porites....Massive,HC,Porites massive,Porites massive,Porites massive,Poritidae
+11,Porites...Branching,HC,Porites branching,Porites branching,Porites,Poritidae
+12,Goniopora,HC,Goniopora,Gonio.,,Poritidae
+13,Astrea,HC,Astrea,Astrea,,Faviidae
+14,Cyphastrea,HC,Cyphastrea,Cypha.,,Faviidae
+15,Dipsastrea,HC,Dipsastrea,Dipsa.,Dipsastrea,Faviidae
+16,Echinopora,HC,Echinopora,Echin.,,Faviidae
+17,Favites,HC,Favites,Fav.,,Faviidae
+18,Goniastrea,HC,Goniastrea,Goni.,,Faviidae
+19,Merulina,HC,Merulina,Merulina,,other_scleractinians
+20,Platygyra,HC,Platygyra,Platy.,,Faviidae
+21,Acanthastrea,HC,Acanthastrea,Acanthastrea,,Mussidae
+22,Lobophyllia,HC,Lobophyllia,Lobo.,Lobophyllia,Mussidae
+23,Fungiidae,HC,Fungiidae,Fungiidae,,other_scleractinians
+24,Leptastrea,HC,Leptastrea,Leptastrea,,Faviidae
+25,Diploastrea,HC,Diploastrea,Diplo.,,Faviidae
+26,Galaxea,HC,Galaxea,Galaxea,,other_scleractinians
+27,Pavona,HC,Pavona,Pavona,,other_scleractinians
+28,Leptoseris,HC,Leptoseris,Leptoseris,,other_scleractinians
+29,Hydnophora,HC,Hydnophora,Hydnophora,,other_scleractinians
+30,Leptoria,HC,Leptoria,Leptoria,,Faviidae
+31,Echinophyllia,HC,Echinophyllia,Echinophyllia,,Mussidae
+32,Styloeniella,HC,Styloeniella,Styloeniella,,other_scleractinians
+33,Coeloseris,HC,Coeloseris,Coeloseris,,other_scleractinians
+34,Paramontastrea,HC,Paramontastrea,Paramontastrea,,Faviidae
+35,Paragoniastrea,HC,Paragoniastrea,Paragoniastrea,,Faviidae
+36,Pectinia,HC,Pectinia,Pectinia,,other_scleractinians
+37,Mycedium,HC,Mycedium,Mycedium,,other_scleractinians
+38,Other.Merulinidae,HC,Merulididae other,Merulididae other,,Faviidae
+39,Other.Lobophyllidae,HC,Lobophyllidae other,Lobophyllidae other,,Mussidae
+40,Coscinarea,HC,Coscinarea,Coscinarea,,other_scleractinians
+41,Psammocora,HC,Psammocora,Psammocora,,other_scleractinians
+42,Pachyseris,HC,Pachyseris,Pachyseris,,other_scleractinians
+43,Physogyra,HC,Physogyra,Physogyra,,other_scleractinians
+44,Oxypora,HC,Oxypora,Oxypora,,other_scleractinians
+45,Fimbriaphyllia,HC,Fimbriaphyllia,Fimbriaphyllia,,other_scleractinians
+46,Euphyllia,HC,Euphyllia,Euphyllia,,other_scleractinians
+47,Turbaniaria,HC,Turbaniaria,Turbaniaria,,other_scleractinians
+48,Tubastrea,HC,Tubastrea,Tubastrea,,other_scleractinians
+49,Other.Scleractinia,HC,Other coral,Other coral,,other_scleractinians
+50,Heliopora,HEL,Other coral,Other coral,,NA
+51,Millepora,MIL,Other coral,Other coral,,NA
+52,Lobophytum,SC,Soft coral,Soft coral,Soft coral,NA
+53,Sarcophyton,SC,Soft coral,Soft coral,Soft coral,NA
+54,Sclerophytum,SC,Soft coral,Soft coral,Soft coral,NA
+55,Sinularia,SC,Soft coral,Soft coral,Soft coral,NA
+56,Palythoa,ZO,Soft coral,Soft coral,Soft coral,NA
+57,Clavularia,SC,Soft coral,Soft coral,Soft coral,NA
+58,Capnella,SC,Soft coral,Soft coral,Soft coral,NA
+59,Nephthea,SC,Soft coral,Soft coral,Soft coral,NA
+60,Dendronephthea,SC,Soft coral,Soft coral,Soft coral,NA
+61,Other.soft.coral,SC,Soft coral,Soft coral,Soft coral,NA
+62,Macroalgae,ALG,Macroalgae,Macroalgae,Macroalgae,NA
+63,Halimeda,ALG,Halimeda,Halimeda,Halimeda,NA
+64,Chlorodesmis,ALG,Macroalgae,Macroalgae,Macroalgae,NA
+65,Sand..Rubble,AB,Sand..Rubble,Sand..Rubble,SR,NA

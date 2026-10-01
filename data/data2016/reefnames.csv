@@ -1,0 +1,87 @@
+,X,oct,april,r24,use,region,ReefNo
+1,1,12-059,12-059,NA,12-059,Cape Grenville,12-059
+2,2,13-117b,13-117b,NA,13-117b,Princess Charlotte Bay,13-117b
+3,3,15-048,15-048,NA,15-048,Lizard,15-048
+4,4,15-070,15-070,NA,15-070,Lizard,15-070
+5,5,15-077,15-077,NA,15-077,Lizard,15-077
+6,6,16_014,16-014a,NA,16_014,Lizard,16_014
+7,7,Agincourt,Agincourt 6,NA,Agincourt,Lizard,15-099d
+8,8,Arlington,Arlington,NA,Arlington,Cairns,16-064
+9,9,Bayag,Bayag,NA,Bayag,Cape Grenville,10-582a
+10,10,Burke,Burke,NA,Burke,Cape Grenville,12-105
+11,11,Carter,Carter,NA,Carter,Lizard,14-137
+12,12,Centipede,Centipede,NA,Centipede,Cape Bowling Green,18-088
+13,13,Chinaman,Chinaman,NA,Chinaman,Lizard,16-024
+14,14,Crescent,Crescent,NA,Crescent,Lizard,14-082
+15,15,Davies,Davies Reef,Davies,Davies,Cape Bowling Green,18-096
+16,16,Day,Day,NA,Day,Lizard,14-089
+17,17,Devlin,Devlin,NA,Devlin,Cape Grenville,11-229a
+18,18,Dip,Dip Reef,NA,Dip,Cape Bowling Green,18-039
+19,19,Dugong,Dugong,NA,Dugong,Cape Grenville,10-576
+20,20,Elford,Elford,Elford,Elford,Cairns,16-073
+21,21,Endeavour,Endeavour,NA,Endeavour,Lizard,15-089
+22,22,Evening,Evening,NA,Evening,Lizard,15-095
+23,23,Eyrie,Eyrie,NA,Eyrie,Lizard,14-118
+24,24,Ferguson,Ferguson,NA,Ferguson,Cape Grenville,12-058
+25,25,Fork,Fork Reef,NA,Fork,Cape Bowling Green,18-083
+26,26,GreatDetached,Great Detached,Three Reefs,GreatDetached,Cape Grenville,11-244
+27,27,GreenIsland,Green Island,NA,GreenIsland,Cairns,16-049
+28,28,Heldson,Heldson,NA,Heldson,Lizard,14-135
+29,29,Heron,Heron Island,Heron,Heron,Capricorn Bunkers,23-052
+30,30,Hicks,Hicks,NA,Hicks,Lizard,14-086
+31,31,Hilder,Hilder,NA,Hilder,Lizard,14-085
+32,32,Ingram,Ingram,NA,Ingram,Lizard,14-064
+33,33,Job,Job,NA,Job,Cape Grenville,11-241
+34,34,Kelso,Kelso Reef,NA,Kelso,Cape Bowling Green,18-030
+35,35,Knife,Knife Reef,NA,Knife,Cape Bowling Green,18-081
+36,36,LittleFitzroy,LittleFitzroy,NA,LittleFitzroy,Cairns,16-055
+37,37,Lizard,Lizard,Lizard,Lizard,Lizard,14-116
+38,38,Long,Long,NA,Long,Lizard,15-019
+39,39,Mackay,Mackay,NA,Mackay,Lizard,15-024
+40,40,Mantis,Mantis,NA,Mantis,Cape Grenville,12-056
+41,41,Moore,Moore,Moore,Moore,Cairns,16-071
+42,42,MorrisIsland,Morris island,NA,MorrisIsland,Princess Charlotte Bay,13-072
+43,43,NoName,No Name,NA,NoName,Lizard,14-139
+44,44,NthDirection,NthDirection,North Direction,NthDirection,Lizard,14-143
+45,45,Nymph,Nymph,NA,Nymph,Lizard,14-115
+46,46,Ogilvie,Ogilvie,NA,Ogilvie,Princess Charlotte Bay,13-076
+47,47,One Tree,One Tree Island,NA,One Tree,Capricorn Bunkers,23-055
+48,48,Opal,Opal,NA,Opal,Lizard,16-025
+49,49,Parke,Parke,NA,Parke,Lizard,14-083
+50,50,Pickersgill,Pickersgill,NA,Pickersgill,Lizard,15-093
+51,51,Rib,Rib,NA,Rib,Cape Bowling Green,18-032
+52,52,Ribbon4,Ribbon 4,NA,Ribbon4,Lizard,15-046
+53,53,Ribbon8,Ribbon 8,Ribbon 8 ,Ribbon8,Lizard,15-021a
+54,54,Ribbon9,Ribbon 9,NA,Ribbon9,Lizard,14-154
+55,55,Rudder,Rudder,NA,Rudder,Lizard,16-023
+56,56,Scott,Scott,NA,Scott,Cairns,17-004
+57,57,Star,Star,NA,Star,Cape Grenville,11-239
+58,58,Startle,Startle,NA,Startle,Lizard,15-028
+59,59,SthDirection,SthDirection,NA,SthDirection,Lizard,14-147
+60,60,Thetford,Thetford,Thetford,Thetford,Cairns,16-068
+61,61,Turtle North,Turtle Group (North),NA,Turtle North,Lizard,14-120b
+62,62,Turtle South,Turtle Group (South),NA,Turtle South,Lizard,14-120b
+63,63,Undine,Undine,NA,Undine,Lizard,16-020a
+64,64,Waining,Waining,NA,Waining,Lizard,14-088
+65,65,Wilson,Wilson,Wilson,Wilson,Princess Charlotte Bay,13-129
+66,66,Wistari,Wistari Reef,Wistari,Wistari,Capricorn Bunkers,23-053
+67,67,Wood,Wood,NA,Wood,Cape Grenville,11-228
+68,68,Yonge,Yonge,NA,Yonge,Lizard,14-138
+69,69,Zenith,Zenith,NA,Zenith,Cape Grenville,12-115
+70,70,Batt,Batt,NA,Batt,Cairns,16-029
+71,71,Low isles,Low isles,NA,Low isles,Cairns,16-028
+72,72,Magnetic Island,Magnetic Island,NA,Magnetic Island,Cape Bowling Green,19-009
+73,73,Orpheus Island,Orpheus Island,NA,Orpheus Island,Cape Bowling Green,18-049a
+74,74,Combe,Combe,NA,Combe,Cape Grenville,14-063
+75,75,Noddy,Noddy,NA,Noddy,Princess Charlotte Bay,13-079c
+76,76,Martha,Martha,NA,Martha,Cape Grenville,12-043a
+77,77,11-203,11-203,NA,11-203,Cape Grenville,11-203
+78,78,Osprey,Osprey,NA,Osprey,Coral Sea,99-999
+79,79,Maxwell Reef,Maxwell Reef,NA,Maxwell Reef,Lizard,14-125
+80,80,Ribbon 10,Ribbon 10,NA,Ribbon 10,Lizard,14-146
+81,81,Switzer,Switzer,NA,Switzer,Lizard,14-061
+82,82,13-077,13-077,NA,13-077,Princess Charlotte Bay,13-077
+83,83,13-093b,13-093b,NA,13-093b,Princess Charlotte Bay,13-093b
+84,84,13-122,13-122,NA,13-122,Princess Charlotte Bay,13-122
+85,85,Blanchard,Blanchard,NA,Blanchard,Princess Charlotte Bay,13-060
+86,86,Corbett,Corbett,NA,Corbett,Princess Charlotte Bay,14-016

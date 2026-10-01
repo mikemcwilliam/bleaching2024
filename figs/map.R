@@ -59,8 +59,8 @@ gbrmax16$dhw[gbrmax16$dhw>15] <- 15
 gbrmax02$dhw[gbrmax02$dhw>15] <- 15
 gbrmax98$dhw[gbrmax98$dhw>15] <- 15
 
-colz <- c("darkblue","blue", "aquamarine", "yellow", "orange", "red", "darkred")
-colbreaks <- c(0,     1,        2.5,            3.5,        6,        8,     15)
+colz <- c("darkblue","blue", "aquamarine", "yellow", "orange", "red", "darkred", "brown", "purple4")
+colbreaks <- c(0,     1,        2.5,            3.5,        6,      10,   13,    16, 19)
 
 
 colvals <- colbreaks / max(colbreaks)
@@ -209,13 +209,13 @@ mapplot
 
 ################################################################# add sites
 
-dat <- read.csv("data/bleaching.csv")
+dat <- read.csv("data/transects.csv")
 
 reefs <- unique(dat[,c("Region","Reef", "GPS.S", "GPS.E")])
 reefs$endlon <- reefs$GPS.E + 5
 reefs$endlat <- - reefs$GPS.S
 
-reefs2 <- unique(dat[,c("Region", "Reef")])
+reefs2 <- na.omit(unique(dat[,c("Region", "Reef")]))
 reefs2[,c("lat", "lon")] <- reefs[match(reefs2$Reef, reefs$Reef), c("GPS.S", "GPS.E")]
 reefs2
 
@@ -234,7 +234,7 @@ reefs2$endlat2[reefs2$Reef=="Davie"] <- reefs2$endlat2[reefs2$Reef=="Davie"] + 1
 
 reefs2$endlat2[reefs2$Reef=="Cormrant"] <- reefs2$endlat2[reefs2$Reef=="Cormrant"] + 0.9
 reefs2$endlat2[reefs2$Reef=="Lizard"] <- reefs2$endlat2[reefs2$Reef=="Lizard"] +0.4
-reefs2$endlat2[reefs2$Reef=="Ribbon 8 "] <- reefs2$endlat2[reefs2$Reef=="Ribbon 8 "] - 0.3
+reefs2$endlat2[reefs2$Reef=="Ribbon 8"] <- reefs2$endlat2[reefs2$Reef=="Ribbon 8"] - 0.35
 reefs2$endlat2[reefs2$Reef=="North Direction"] <- reefs2$endlat2[reefs2$Reef=="North Direction"] -0
 
 reefs2$endlat2[reefs2$Reef=="Elford"] <- reefs2$endlat2[reefs2$Reef=="Elford"] -0.6
@@ -256,12 +256,16 @@ reefs2$endlat2[reefs2$Reef=="Wilson"] <- reefs2$endlat2[reefs2$Reef=="Wilson"] +
 
 head(reefs2)
 reefs2$Reef[reefs2$Reef=="Cormrant"] <- "Cormorant"
+reefs2$Reef <- ifelse(reefs2$Region %in% c("Princess Charlotte Bay", "Cape Grenville") | reefs2$Reef %in% c("Thetford", "Cormorant"), reefs2$Reef, paste(reefs2$Reef, "*", sep=" "))
+#reefs2$Reef <- ifelse(reefs2$Reef %in% c("Thetford", "Cormorant"), reefs2$Reef, paste(reefs2$Reef, "*", sep=" "))
 
  map24c <- map24+guides(col="none")+
 # geom_sf(data=gbr.sf,  lwd=0.001, col="grey40", fill=NA)+
  geom_segment(data=reefs2, aes(x=lon, xend=endlon, y= -lat, yend= endlat2), size=0.05)+
  geom_text(data=reefs2, aes(x=endlon+0.01, y= endlat2, label=Reef), hjust=0, size=1.8)+
  scale_x_continuous(breaks=c(142, 146, 150, 154))+
+ geom_point(data=towns, aes(long, lat), shape=15, size=1)+
+geom_text(data=towns, aes(long-0.27, lat, label=name), hjust=1, size=1.8)+
  coord_sf(ylim=c(ylim[1]+1.75, ylim[2]+0.3), xlim=c(xlim[1]+0.2, xlim[2]+4))+ggtitle("")+ theme_classic()+theme(axis.text=element_text(size=6),axis.title=element_blank(), legend.title=element_blank(),  legend.key.width=unit(2, "mm"),axis.line=element_blank(),   plot.title=element_text(size=9, hjust=0.1), legend.position="left", panel.background=element_blank())
  map24c 
  

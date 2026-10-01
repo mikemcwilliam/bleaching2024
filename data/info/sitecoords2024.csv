@@ -1,0 +1,367 @@
+﻿#,Year,Date,Region,Reef,Site,Transect_code,Zone,Transect,Recorder,Depth,Complexity,GPS S,GPS E,Direction,CCA,Slope,Notes,Recorder
+1,2024,03/03/2024,Cairns,Elford,B2 - NE Point,ELF_B2_S1,Slope,1,Morgan,8.8,2.5,16.91089,146.28952,NE,30,0,,
+2,2024,03/03/2024,Cairns,Elford,B2 - NE Point,ELF_B2_S2,Slope,2,Morgan,8.5,3,16.91089,146.28952,NE,20,0,,
+3,2024,03/03/2024,Cairns,Elford,B2 - NE Point,ELF_B2_S3,Slope,3,Morgan,8,2.5,16.91089,146.28952,NE,10,15,,
+4,2024,03/03/2024,Cairns,Elford,B2 - NE Point,ELF_B2_C1,Crest,1,Morgan,0.5,3.5,16.91089,146.28952,NE,60,0,Very low tide,
+5,2024,03/03/2024,Cairns,Elford,B2 - NE Point,ELF_B2_C2,Crest,2,Morgan,0.5,4,16.91089,146.28952,NE,70,0,,
+6,2024,03/03/2024,Cairns,Elford,B2 - NE Point,ELF_B2_C3,Crest,3,Morgan,0.5,3.5,16.91089,146.28952,NE,40,0,,
+7,2024,03/03/2024,Cairns,Elford,B1 - Lagoon,ELF_B1_S1,Slope,1,Morgan,3,2,16.92017,146.27783,SW,5,5,Sand at 3-4m,
+8,2024,03/03/2024,Cairns,Elford,B1 - Lagoon,ELF_B1_S2,Slope,2,Morgan,3,2,16.92017,146.27783,SW,5,5,,
+9,2024,03/03/2024,Cairns,Elford,B1 - Lagoon,ELF_B1_S3,Slope,3,Morgan,3,2,16.92017,146.27783,SW,20,10,,
+10,2024,03/03/2024,Cairns,Elford,B1 - Lagoon,ELF_B1_C1,Crest,1,Morgan,1.5,2.5,16.92017,146.27783,SW,10,0,,
+11,2024,03/03/2024,Cairns,Elford,B1 - Lagoon,ELF_B1_C2,Crest,2,Morgan,1.2,3,16.92017,146.27783,SW,20,0,,
+12,2024,03/03/2024,Cairns,Elford,B1 - Lagoon,ELF_B1_C3,Crest,3,Morgan,1.5,2,16.92017,146.27783,SW,10,0,,
+13,2024,03/03/2024,Cairns,Elford,B3 - SE Channel,ELF_B3_S1,Slope,1,Morgan,8,3,16.92845,146.25786,SE,20,45,,
+14,2024,03/03/2024,Cairns,Elford,B3 - SE Channel,ELF_B3_S2,Slope,2,Morgan,8,3,16.92845,146.25786,SE,20,45,,
+15,2024,03/03/2024,Cairns,Elford,B3 - SE Channel,ELF_B3_S3,Slope,3,Morgan,8,3,16.92845,146.25786,SE,10,45,,
+16,2024,03/03/2024,Cairns,Elford,B3 - SE Channel,ELF_B3_C1,Crest,1,Morgan,1.5,2.5,16.92845,146.25786,SE,60,0,,
+17,2024,03/03/2024,Cairns,Elford,B3 - SE Channel,ELF_B3_C2,Crest,2,Morgan,1.5,3,16.92845,146.25786,SE,50,0,,
+18,2024,03/03/2024,Cairns,Elford,B3 - SE Channel,ELF_B3_C3,Crest,3,Morgan,1.5,2.5,16.92845,146.25786,SE,40,0,,
+19,2024,04/03/2024,Cairns,Moore,B1 - South,MOO_B1_S1,Slope,1,Morgan,6,2,16.88011,146.2486,E,10,10,,
+20,2024,04/03/2024,Cairns,Moore,B1 - South,MOO_B1_S2,Slope,2,Morgan,7,2.5,16.88011,146.2486,E,10,10,,
+21,2024,04/03/2024,Cairns,Moore,B1 - South,MOO_B1_S3,Slope,3,Morgan,8,2.5,16.88011,146.2486,E,10,10,,
+22,2024,04/03/2024,Cairns,Moore,B1 - South,MOO_B1_C1,Crest,1,Morgan,2,2,16.88011,146.2486,E,60,0,Gentle slope; 200m between 2m crest and 8m slope,
+23,2024,04/03/2024,Cairns,Moore,B1 - South,MOO_B1_C2,Crest,2,Morgan,2,2,16.88011,146.2486,E,10,0,,
+24,2024,04/03/2024,Cairns,Moore,B1 - South,MOO_B2_C3,Crest,3,Morgan,2,2,16.88011,146.2486,E,10,0,,
+25,2024,04/03/2024,Cairns,Moore,B2 - East,MOO_B2_S1,Slope,1,Morgan,8.7,4,16.85787,146.24741,N,40,90,,
+26,2024,04/03/2024,Cairns,Moore,B2 - East,MOO_B2_S2,Slope,2,Morgan,8.8,4,16.85787,146.24741,N,20,90,,
+27,2024,04/03/2024,Cairns,Moore,B2 - East,MOO_B2_S3,Slope,3,Morgan,9,4,16.85787,146.24741,N,20,90,,
+28,2024,04/03/2024,Cairns,Moore,B2 - East,MOO_B2_C1,Crest,1,Morgan,2,2,16.85787,146.24741,N,10,0,,
+29,2024,04/03/2024,Cairns,Moore,B2 - East,MOO_B2_C2,Crest,2,Morgan,2,1.5,16.85787,146.24741,N,10,0,,
+30,2024,04/03/2024,Cairns,Moore,B2 - East,MOO_B2_C3,Crest,3,Morgan,2,1.5,16.85787,146.24741,N,10,0,,
+31,2024,04/03/2024,Cairns,Moore,B3 - Satellite bommie,MOO_B3_S1,Slope,1,Morgan,8.2,3.5,16.88011,146.2486,W,20,90,Inside edge of bommie (near inner mooring),
+32,2024,04/03/2024,Cairns,Moore,B3 - Satellite bommie,MOO_B3_S2,Slope,2,Morgan,8.6,3,16.84727,146.2189,W,10,45,,
+33,2024,04/03/2024,Cairns,Moore,B3 - Satellite bommie,MOO_B3_S3,Slope,3,Morgan,8.3,3,16.84727,146.2189,W,10,30,,
+34,2024,04/03/2024,Cairns,Moore,B3 - Satellite bommie,MOO_B3_C1,Crest,1,Morgan,2,4,16.84727,146.2189,W,10,0,,
+35,2024,04/03/2024,Cairns,Moore,B3 - Satellite bommie,MOO_B3_C2,Crest,2,Morgan,2,3.5,16.84727,146.2189,W,20,0,,
+36,2024,04/03/2024,Cairns,Moore,B3 - Satellite bommie,MOO_B3_C3,Crest,3,Morgan,2,4,16.84727,146.2189,W,30,0,,
+37,2024,06/03/2024,Cairns,Thetford,B1 - East Reef Mooring,THE_B1_S1,Slope,1,Morgan,8.3,4,,,N,5,90,steep slope to 15m ,
+38,2024,06/03/2024,Cairns,Thetford,B1 - East Reef Mooring,THE_B1_S2,Slope,2,Morgan,8,4,,,N,5,90,,
+39,2024,06/03/2024,Cairns,Thetford,B1 - East Reef Mooring,THE_B1_S3,Slope,3,Morgan,7.5,3,,,N,5,45,,
+40,2024,06/03/2024,Cairns,Thetford,B1 - East Reef Mooring,THE_B1_C1,Crest,1,Morgan,2.5,2,,,N,10,0,,
+41,2024,06/03/2024,Cairns,Thetford,B1 - East Reef Mooring,THE_B1_C2,Crest,2,Morgan,2.5,1.5,,,N,20,0,,
+42,2024,06/03/2024,Cairns,Thetford,B1 - East Reef Mooring,THE_B2_C3,Crest,3,Morgan,2.5,2,,,N,10,0,,
+43,2024,06/03/2024,Cairns,Thetford,B2 - Crescent patch,THE_B2_S1,Slope,1,Morgan,7.8,4,,,S,<5,30,"lagoon crescent reef, SW corner  ",
+44,2024,06/03/2024,Cairns,Thetford,B2 - Crescent patch,THE_B2_S2,Slope,2,Morgan,8.5,3,,,S,<5,45,,
+45,2024,06/03/2024,Cairns,Thetford,B2 - Crescent patch,THE_B2_S3,Slope,3,Morgan,8.1,4,,,S,<5,30,,
+46,2024,06/03/2024,Cairns,Thetford,B2 - Crescent patch,THE_B2_C1,Crest,1,Morgan,2.5,2.5,,,S,5,0,T to S around front side of path ,
+47,2024,06/03/2024,Cairns,Thetford,B2 - Crescent patch,THE_B2_C2,Crest,2,Morgan,2.5,1.5,,,S,5,0,,
+48,2024,06/03/2024,Cairns,Thetford,B2 - Crescent patch,THE_B2_C3,Crest,3,Morgan,2.2,2,,,S,<5,0,,
+49,2024,06/03/2024,Cairns,Thetford,B3 - North Point,THE_B3_S1,Slope,1,Morgan,8.3,4,,,SW,40,90,steep wall to sand at 10m. Very low coral cover ,
+50,2024,06/03/2024,Cairns,Thetford,B3 - North Point,THE_B3_S2,Slope,2,Morgan,7.5,4,,,SW,40,90,,
+51,2024,06/03/2024,Cairns,Thetford,B3 - North Point,THE_B3_S3,Slope,3,Morgan,8,4,,,SW,40,90,,
+52,2024,06/03/2024,Cairns,Thetford,B3 - North Point,THE_B3_C1,Crest,1,Morgan,1,3,,,SW,40,0,well defined crest ,
+53,2024,06/03/2024,Cairns,Thetford,B3 - North Point,THE_B3_C2,Crest,2,Morgan,1,2.5,,,SW,30,0,,
+54,2024,06/03/2024,Cairns,Thetford,B3 - North Point,THE_B3_C3,Crest,3,Morgan,1,2.5,,,SW,30,0,,
+55,2024,15/03/2024,Capricorn Bunkers,Wistari,B1 - NW,WIS_B1_S1,Slope,1,Morgan,6,2,23.83849,151.25171,SW,5,0,,Morgan only
+56,2024,15/03/2024,Capricorn Bunkers,Wistari,B1 - NW,WIS_B1_S2,Slope,2,Morgan,5.1,2.5,23.83849,151.25171,SW,5,0,,Morgan only
+57,2024,15/03/2024,Capricorn Bunkers,Wistari,B1 - NW,WIS_B1_S3,Slope,3,Morgan,5.5,2,23.83849,151.25171,SW,5,0,,Morgan only
+58,2024,15/03/2024,Capricorn Bunkers,Wistari,B1 - NW,WIS_B1_C1,Crest,1,Morgan,1.6,1,23.83849,151.25171,SW,5,0,,Morgan only
+59,2024,15/03/2024,Capricorn Bunkers,Wistari,B1 - NW,WIS_B1_C2,Crest,2,Morgan,1.5,1,23.83849,151.25171,SW,5,0,,Morgan only
+60,2024,15/03/2024,Capricorn Bunkers,Wistari,B1 - NW,WIS_B2_C3,Crest,3,Morgan,1.5,1,23.83849,151.25171,SW,5,0,,Morgan only
+61,2024,15/03/2024,Capricorn Bunkers,Wistari,B2 - North,WIS_B2_S1,Slope,1,Morgan,7.3,2.5,23.46908,151.84262,East (towards Heron),5,15,Sand at 8m depth,"Peter (PIT), Morgan and Gen"
+62,2024,15/03/2024,Capricorn Bunkers,Wistari,B2 - North,WIS_B2_S2,Slope,2,Morgan,7,2,23.46908,151.84262,East (towards Heron),5,0,,"Peter (PIT), Morgan and Gen"
+63,2024,15/03/2024,Capricorn Bunkers,Wistari,B2 - North,WIS_B2_S3,Slope,3,Morgan,7.3,2.5,23.46908,151.84262,East (towards Heron),5,0,,"Peter (PIT), Morgan and Gen"
+64,2024,15/03/2024,Capricorn Bunkers,Wistari,B2 - North,WIS_B2_C1,Crest,1,Morgan,1.9,1.5,23.46908,151.84262,East (towards Heron),5,0,,"Peter (PIT), Morgan and Gen"
+65,2024,15/03/2024,Capricorn Bunkers,Wistari,B2 - North,WIS_B2_C2,Crest,2,Morgan,2.5,1.5,23.46908,151.84262,East (towards Heron),10,10,,"Peter (PIT), Morgan and Gen"
+66,2024,15/03/2024,Capricorn Bunkers,Wistari,B2 - North,WIS_B2_C3,Crest,3,Morgan,2.5,2,23.46908,151.84262,East (towards Heron),5,0,,"Peter (PIT), Morgan and Gen"
+67,2024,15/03/2024,Capricorn Bunkers,Wistari,B3 - North Channel,WIS_B3_S1,Slope,1,Morgan,5.4,2.5,23.4499,151.8989,SE,<5,0,,"Peter (PIT), Morgan and Gen"
+68,2024,15/03/2024,Capricorn Bunkers,Wistari,B3 - North Channel,WIS_B3_S2,Slope,2,Morgan,5,2.5,23.4499,151.8989,SE,5,0,,"Peter (PIT), Morgan and Gen"
+69,2024,15/03/2024,Capricorn Bunkers,Wistari,B3 - North Channel,WIS_B3_S3,Slope,3,Morgan,4.5,3,23.4499,151.8989,SE,<5,0,,"Peter (PIT), Morgan and Gen"
+70,2024,15/03/2024,Capricorn Bunkers,Wistari,B3 - North Channel,WIS_B3_C1,Crest,1,Morgan,1.5,2,23.4499,151.8989,SE,10,0,,"Peter (PIT), Morgan and Gen"
+71,2024,15/03/2024,Capricorn Bunkers,Wistari,B3 - North Channel,WIS_B3_C2,Crest,2,Morgan,1.5,2,23.4499,151.8989,SE,30,0,,"Peter (PIT), Morgan and Gen"
+72,2024,15/03/2024,Capricorn Bunkers,Wistari,B3 - North Channel,WIS_B3_C3,Crest,3,Morgan,2,2,23.4499,151.8989,SE,5,0,,"Peter (PIT), Morgan and Gen"
+73,2024,15/03/2024,Capricorn Bunkers,Heron,B1 - Viv's,HER_B1_S1,Slope,1,Morgan,7.4,2,23.44293,151.9066,NW,20,45,,Morgan only
+74,2024,15/03/2024,Capricorn Bunkers,Heron,B1 - Viv's,HER_B1_S2,Slope,2,Morgan,8,2,23.44293,151.9066,NW,20,45,,Morgan only
+75,2024,15/03/2024,Capricorn Bunkers,Heron,B1 - Viv's,HER_B1_S3,Slope,3,Morgan,7.5,2,23.44293,151.9066,NW,5,45,,Morgan only
+76,2024,15/03/2024,Capricorn Bunkers,Heron,B1 - Viv's,HER_B1_C1,Crest,1,Morgan,1.5,2.5,23.44293,151.9066,NW,0,10,,Morgan only
+77,2024,15/03/2024,Capricorn Bunkers,Heron,B1 - Viv's,HER_B1_C2,Crest,2,Morgan,2.3,3,23.44293,151.9066,NW,0,10,,Morgan only
+78,2024,15/03/2024,Capricorn Bunkers,Heron,B1 - Viv's,HER_B2_C3,Crest,3,Morgan,2.1,3,23.44293,151.9066,NW,0,10,,Morgan only
+79,2024,15/03/2024,Capricorn Bunkers,Heron,B2 - NE Point,HER_B2_S1,Slope,1,Morgan,5,2.5,23.43427,151.98409,NE,<5,0,,"Peter (PIT), Morgan and Gen"
+80,2024,15/03/2024,Capricorn Bunkers,Heron,B2 - NE Point,HER_B2_S2,Slope,2,Morgan,5,2,23.43427,151.98409,NE,20,0,,"Peter (PIT), Morgan and Gen"
+81,2024,15/03/2024,Capricorn Bunkers,Heron,B2 - NE Point,HER_B2_S3,Slope,3,Morgan,8,3,23.43427,151.98409,NE,10,60,,"Peter (PIT), Morgan and Gen"
+82,2024,15/03/2024,Capricorn Bunkers,Heron,B2 - NE Point,HER_B2_C1,Crest,1,Morgan,1.6,2,23.43427,151.98409,NE,20,0,,"Peter (PIT), Morgan and Gen"
+83,2024,15/03/2024,Capricorn Bunkers,Heron,B2 - NE Point,HER_B2_C2,Crest,2,Morgan,1.8,2,23.43427,151.98409,NE,20,0,,"Peter (PIT), Morgan and Gen"
+84,2024,15/03/2024,Capricorn Bunkers,Heron,B2 - NE Point,HER_B2_C3,Crest,3,Morgan,1.2,2,23.43427,151.98409,NE,30,0,,"Peter (PIT), Morgan and Gen"
+85,2024,16/03/2024,Capricorn Bunkers,Heron,B3 - North Bay,HER_B3_S1,Slope,1,Morgan,5.6,2.5,23.43936,151.97849,NE,5,45,Sand at 6m. Transects toward Sykes,"Peter (PIT), Morgan and Gen"
+86,2024,16/03/2024,Capricorn Bunkers,Heron,B3 - North Bay,HER_B3_S2,Slope,2,Morgan,6,3,23.43936,151.97849,NE,20,45,,"Peter (PIT), Morgan and Gen"
+87,2024,16/03/2024,Capricorn Bunkers,Heron,B3 - North Bay,HER_B3_S3,Slope,3,Morgan,5,2.5,23.43936,151.97849,NE,10,45,,"Peter (PIT), Morgan and Gen"
+88,2024,16/03/2024,Capricorn Bunkers,Heron,B3 - North Bay,HER_B3_C1,Crest,1,Morgan,2.4,2,23.43936,151.97849,NE,40,0,Swam along ridge to get to Crest. Crest with sloping edge,"Peter (PIT), Morgan and Gen"
+89,2024,16/03/2024,Capricorn Bunkers,Heron,B3 - North Bay,HER_B3_C2,Crest,2,Morgan,1.6,2,23.43936,151.97849,NE,30,10,,"Peter (PIT), Morgan and Gen"
+90,2024,16/03/2024,Capricorn Bunkers,Heron,B3 - North Bay,HER_B3_C3,Crest,3,Morgan,2.1,2,23.43936,151.97849,NE,30,10,,"Peter (PIT), Morgan and Gen"
+91,2024,16/03/2024,Capricorn Bunkers,Wilson,B1 - NE,WIL_B1_S1,Slope,1,Morgan,5,3,23.29771,151.91895,NE,10,5,Very wide gradual slope. ,"Peter (PIT), Morgan and Gen"
+92,2024,16/03/2024,Capricorn Bunkers,Wilson,B1 - NE,WIL_B1_S2,Slope,2,Morgan,6.6,3,23.29771,151.91895,NE,10,5,,"Peter (PIT), Morgan and Gen"
+93,2024,16/03/2024,Capricorn Bunkers,Wilson,B1 - NE,WIL_B1_S3,Slope,3,Morgan,6,3,23.29771,151.91895,NE,10,5,,"Peter (PIT), Morgan and Gen"
+94,2024,16/03/2024,Capricorn Bunkers,Wilson,B1 - NE,WIL_B1_C1,Crest,1,Morgan,2,2.5,23.29771,151.91895,NE,10,0,Poorly defined crest. Lots of bleached Acropora with Halimeda amongst branches.,"Peter (PIT), Morgan and Gen"
+95,2024,16/03/2024,Capricorn Bunkers,Wilson,B1 - NE,WIL_B1_C2,Crest,2,Morgan,2,2.5,23.29771,151.91895,NE,20,0,,"Peter (PIT), Morgan and Gen"
+96,2024,16/03/2024,Capricorn Bunkers,Wilson,B1 - NE,WIL_B1_C3,Crest,3,Morgan,2,3,23.29771,151.91895,NE,20,0,,"Peter (PIT), Morgan and Gen"
+97,2024,16/03/2024,Capricorn Bunkers,Wilson,B2 - West,WIL_B2_S1,Slope,1,Morgan,5.3,3,23.3078,151.91423,N,20,0,Wide gradual slope. Transects back toward Wilson Island,Morgan only
+98,2024,16/03/2024,Capricorn Bunkers,Wilson,B2 - West,WIL_B2_S2,Slope,2,Morgan,5.3,3,23.3078,151.91423,N,20,0,,Morgan only
+99,2024,16/03/2024,Capricorn Bunkers,Wilson,B2 - West,WIL_B2_S3,Slope,3,Morgan,5.2,3,23.3078,151.91423,N,20,0,,Morgan only
+100,2024,16/03/2024,Capricorn Bunkers,Wilson,B2 - West,WIL_B2_C1,Crest,1,Morgan,2,2.5,23.3078,151.91423,N,10,10,Very graudal slope with poorly defined crest,Morgan only
+101,2024,16/03/2024,Capricorn Bunkers,Wilson,B2 - West,WIL_B2_C2,Crest,2,Morgan,2,2.5,23.3078,151.91423,N,10,10,,Morgan only
+102,2024,16/03/2024,Capricorn Bunkers,Wilson,B2 - West,WIL_B2_C3,Crest,3,Morgan,2,2.5,23.3078,151.91423,N,10,10,,Morgan only
+103,2024,17/03/2024,Hydrographers Passage,Chavel,B1 - Western Flank,CHA_B1_S1,Slope,1,Morgan,8,4,20.84924,150.30913,S,20,90,Steep reef to bommies at 10m.,Morgan only
+104,2024,17/03/2024,Hydrographers Passage,Chavel,B1 - Western Flank,CHA_B1_S2,Slope,2,Morgan,8,3.5,20.84924,150.30913,S,30,90,,Morgan only
+105,2024,17/03/2024,Hydrographers Passage,Chavel,B1 - Western Flank,CHA_B1_S3,Slope,3,Morgan,8,4,20.84924,150.30913,S,20,90,,Morgan only
+106,2024,17/03/2024,Hydrographers Passage,Chavel,B1 - Western Flank,CHA_B1_C1,Crest,1,Morgan,2.8,2.5,20.84924,150.30913,S,40,0,well defined crest ,Morgan only
+107,2024,17/03/2024,Hydrographers Passage,Chavel,B1 - Western Flank,CHA_B1_C2,Crest,2,Morgan,2.9,2.5,20.84924,150.30913,S,40,0,,Morgan only
+108,2024,17/03/2024,Hydrographers Passage,Chavel,B1 - Western Flank,CHA_B1_C3,Crest,3,Morgan,2.8,2.5,20.84924,150.30913,S,40,0,,Morgan only
+109,2024,17/03/2024,Hydrographers Passage,Chavel,B2 - Northern edge,CHA_B2_S1,Slope,1,Morgan,4.6,2,20.84093,150.31494,W,5,90,Small step down to sand at 4-6m,"Peter (PIT), Morgan and Gen"
+110,2024,17/03/2024,Hydrographers Passage,Chavel,B2 - Northern edge,CHA_B2_S2,Slope,2,Morgan,5,2,20.84093,150.31494,W,5,90,,"Peter (PIT), Morgan and Gen"
+111,2024,17/03/2024,Hydrographers Passage,Chavel,B2 - Northern edge,CHA_B2_S3,Slope,3,Morgan,5,2,20.84093,150.31494,W,5,90,,Morgan only
+112,2024,17/03/2024,Hydrographers Passage,Chavel,B2 - Northern edge,CHA_B2_C1,Crest,1,Morgan,3,2,20.84093,150.31494,W,10,0,Obvious crest but low coral cover,"Peter (PIT), Morgan and Gen"
+113,2024,17/03/2024,Hydrographers Passage,Chavel,B2 - Northern edge,CHA_B2_C2,Crest,2,Morgan,2.8,2,20.84093,150.31494,W,10,0,,"Peter (PIT), Morgan and Gen"
+114,2024,17/03/2024,Hydrographers Passage,Chavel,B2 - Northern edge,CHA_B2_C3,Crest,3,Morgan,2.2,2,20.84093,150.31494,W,10,0,,Morgan only
+115,2024,17/03/2024,Hydrographers Passage,Chavel,B3 - Large Lagoon Reef,CHA_B3_S1,Slope,1,Morgan,8,3,20.80667,150.40834,W,5,90,Large patch reef in 10m. Transects along Northern edge,"Peter (PIT), Morgan and Gen"
+116,2024,17/03/2024,Hydrographers Passage,Chavel,B3 - Large Lagoon Reef,CHA_B3_S2,Slope,2,Morgan,8,3.5,20.80667,150.40834,W,5,90,,"Peter (PIT), Morgan and Gen"
+117,2024,17/03/2024,Hydrographers Passage,Chavel,B3 - Large Lagoon Reef,CHA_B3_S3,Slope,3,Morgan,8,3,20.80667,150.40834,W,5,60,,Morgan only
+118,2024,17/03/2024,Hydrographers Passage,Chavel,B3 - Large Lagoon Reef,CHA_B3_C1,Crest,1,Morgan,2.5,2.5,20.80667,150.40834,W,5,0,,"Peter (PIT), Morgan and Gen"
+119,2024,17/03/2024,Hydrographers Passage,Chavel,B3 - Large Lagoon Reef,CHA_B3_C2,Crest,2,Morgan,2.5,3,20.80667,150.40834,W,5,0,,"Peter (PIT), Morgan and Gen"
+120,2024,17/03/2024,Hydrographers Passage,Chavel,B3 - Large Lagoon Reef,CHA_B3_C3,Crest,3,Morgan,2.5,3,20.80667,150.40834,W,5,0,,Morgan only
+121,2024,17/03/2024,Hydrographers Passage,Goble,B1 - Western Flank,GOB_B1_S1,Slope,1,Morgan,7,2.5,20.77806,150.46088,S,20,45,,Morgan only
+122,2024,17/03/2024,Hydrographers Passage,Goble,B1 - Western Flank,GOB_B1_S2,Slope,2,Morgan,8,3,20.77806,150.46088,S,20,30,,Morgan only
+123,2024,17/03/2024,Hydrographers Passage,Goble,B1 - Western Flank,GOB_B1_S3,Slope,3,Morgan,8,2.5,20.77806,150.46088,S,20,30,,Morgan only
+124,2024,17/03/2024,Hydrographers Passage,Goble,B1 - Western Flank,GOB_B1_C1,Crest,1,Morgan,1.5,2,20.77806,150.46088,S,10,0,,Morgan only
+125,2024,17/03/2024,Hydrographers Passage,Goble,B1 - Western Flank,GOB_B1_C2,Crest,2,Morgan,1.5,2,20.77806,150.46088,S,10,0,,Morgan only
+126,2024,17/03/2024,Hydrographers Passage,Goble,B1 - Western Flank,GOB_B1_C3,Crest,3,Morgan,1.5,2,20.77806,150.46088,S,10,0,,Morgan only
+127,2024,17/03/2024,Hydrographers Passage,Goble,B2 - Northern edge,GOB_B2_S1,Slope,1,Morgan,8,1.5,20.77082,150.46986,E,20,45,,"Peter (PIT), Morgan and Gen"
+128,2024,17/03/2024,Hydrographers Passage,Goble,B2 - Northern edge,GOB_B2_S2,Slope,2,Morgan,8,1.5,20.77082,150.46986,E,20,0,,Morgan only
+129,2024,17/03/2024,Hydrographers Passage,Goble,B2 - Northern edge,GOB_B2_S3,Slope,3,Morgan,8,1.5,20.77082,150.46986,E,30,0,,Morgan only
+130,2024,17/03/2024,Hydrographers Passage,Goble,B2 - Northern edge,GOB_B2_C1,Crest,1,Morgan,1.6,1.5,20.77082,150.46986,E,20,0,Sloping crest,"Peter (PIT), Morgan and Gen"
+131,2024,17/03/2024,Hydrographers Passage,Goble,B2 - Northern edge,GOB_B2_C2,Crest,2,Morgan,1.9,1.5,20.77082,150.46986,E,30,0,,Morgan only
+132,2024,17/03/2024,Hydrographers Passage,Goble,B2 - Northern edge,GOB_B2_C3,Crest,3,Morgan,1.7,1.5,20.77082,150.46986,E,20,0,,Morgan only
+133,2024,17/03/2024,Hydrographers Passage,Goble,B3 - NE Point,GOB_B3_S1,Slope,1,Morgan,5,3.5,20.7634,150.49123,E,50,90,Very broken reef,"Peter (PIT), Morgan and Gen"
+134,2024,17/03/2024,Hydrographers Passage,Goble,B3 - NE Point,GOB_B3_S2,Slope,2,Morgan,6.6,3,20.7634,150.49123,E,30,90,,"Peter (PIT), Morgan and Gen"
+135,2024,17/03/2024,Hydrographers Passage,Goble,B3 - NE Point,GOB_B3_S3,Slope,3,Morgan,6.1,3,20.7634,150.49123,E,20,90,,Morgan only
+136,2024,17/03/2024,Hydrographers Passage,Goble,B3 - NE Point,GOB_B3_C1,Crest,1,Morgan,2,1.5,20.7634,150.49123,E,5,0,"Flat top, but non-contiguous reef","Peter (PIT), Morgan and Gen"
+137,2024,17/03/2024,Hydrographers Passage,Goble,B3 - NE Point,GOB_B3_C2,Crest,2,Morgan,2,1.5,20.7634,150.49123,E,10,0,,"Peter (PIT), Morgan and Gen"
+138,2024,17/03/2024,Hydrographers Passage,Goble,B3 - NE Point,GOB_B3_C3,Crest,3,Morgan,1.8,1.5,20.7634,150.49123,E,10,0,,Morgan only
+139,2024,18/03/2024,Hydrographers Passage,Bugatti,B1 - Western Flank,BUG_B1_S1,Slope,1,Morgan,7.5,3.5,20.12446,150.29694,S,20,90,"Steep slope to 20+m. Could see some bleached corals (e.g., Seriatopora) all the way to bottome of slope.",Morgan only
+140,2024,18/03/2024,Hydrographers Passage,Bugatti,B1 - Western Flank,BUG_B1_S2,Slope,2,Morgan,8,3.5,20.12446,150.29694,S,20,90,,Morgan only
+141,2024,18/03/2024,Hydrographers Passage,Bugatti,B1 - Western Flank,BUG_B1_S3,Slope,3,Morgan,8.7,4,20.12446,150.29694,S,20,90,,Morgan only
+142,2024,18/03/2024,Hydrographers Passage,Bugatti,B1 - Western Flank,BUG_B1_C1,Crest,1,Morgan,2.6,3,20.12446,150.29694,S,40,0,Flat top with very defined edge,Morgan only
+143,2024,18/03/2024,Hydrographers Passage,Bugatti,B1 - Western Flank,BUG_B1_C2,Crest,2,Morgan,2.7,3,20.12446,150.29694,S,50,0,,Morgan only
+144,2024,18/03/2024,Hydrographers Passage,Bugatti,B1 - Western Flank,BUG_B1_C3,Crest,3,Morgan,2.5,3,20.12446,150.29694,S,40,0,,Morgan only
+145,2024,18/03/2024,Hydrographers Passage,Bugatti,B2 - NW,BUG_B2_S1,Slope,1,Morgan,7.5,2.5,20.09779,150.28989,W (Towards light),5,10,Very wide moderate slope with very high coral cover (mostly staghorn Acropora,"Peter (PIT), and Morgan"
+146,2024,18/03/2024,Hydrographers Passage,Bugatti,B2 - NW,BUG_B2_S2,Slope,2,Morgan,7.7,3,20.09779,150.28989,W (Towards light),5,20,,"Peter (PIT), and Morgan"
+147,2024,18/03/2024,Hydrographers Passage,Bugatti,B2 - NW,BUG_B2_S3,Slope,3,Morgan,8,3,20.09779,150.28989,W (Towards light),30,10,,"Peter (PIT), and Morgan"
+148,2024,18/03/2024,Hydrographers Passage,Bugatti,B2 - NW,BUG_B2_C1,Crest,1,Morgan,1.6,3,20.09779,150.28989,W (Towards light),10,0,Obvious crest that steps doen 2-3m to slope.,"Peter (PIT), and Morgan"
+149,2024,18/03/2024,Hydrographers Passage,Bugatti,B2 - NW,BUG_B2_C2,Crest,2,Morgan,1.6,3,20.09779,150.28989,W (Towards light),40,0,,"Peter (PIT), and Morgan"
+150,2024,18/03/2024,Hydrographers Passage,Bugatti,B2 - NW,BUG_B2_C3,Crest,3,Morgan,1.4,3,20.09779,150.28989,W (Towards light),50,0,,"Peter (PIT), and Morgan"
+151,2024,18/03/2024,Hydrographers Passage,Bugatti,B3 - NE Point,BUG_B3_S1,Slope,1,Morgan,5,3,20.07566,150.29939,SW (into lagoon),5,90,Broken reef with assorted bommies on very white sand,"Peter (PIT), Morgan and Gen"
+152,2024,18/03/2024,Hydrographers Passage,Bugatti,B3 - NE Point,BUG_B3_S2,Slope,2,Morgan,7,2.5,20.07566,150.29939,SW (into lagoon),10,40,,"Peter (PIT), Morgan and Gen"
+153,2024,18/03/2024,Hydrographers Passage,Bugatti,B3 - NE Point,BUG_B3_S3,Slope,3,Morgan,7,2.5,20.07566,150.29939,SW (into lagoon),10,45,,"Peter (PIT), and Morgan"
+154,2024,18/03/2024,Hydrographers Passage,Bugatti,B3 - NE Point,BUG_B3_C1,Crest,1,Morgan,1.4,2,20.07566,150.29939,SW (into lagoon),80,0,Mostly contiguous crest running into lagoon,"Peter (PIT), Morgan and Gen"
+155,2024,18/03/2024,Hydrographers Passage,Bugatti,B3 - NE Point,BUG_B3_C2,Crest,2,Morgan,1.5,2,20.07566,150.29939,SW (into lagoon),50,0,,"Peter (PIT), Morgan and Gen"
+156,2024,18/03/2024,Hydrographers Passage,Bugatti,B3 - NE Point,BUG_B3_C3,Crest,3,Morgan,1.5,2,20.07566,150.29939,SW (into lagoon),70,0,,"Peter (PIT), and Morgan"
+157,2024,19/03/2024,Cape Bowling Green,Broadhurst,B1 - North Little Broadhurst,BRO_B1_S1,Slope,1,Morgan,6,2,18.94693,147.69511,W,10,45,Moderate sloep. Very low coal cover.,"Peter (PIT), Morgan and Gen"
+158,2024,19/03/2024,Cape Bowling Green,Broadhurst,B1 - North Little Broadhurst,BRO_B1_S2,Slope,2,Morgan,6,2.5,18.94693,147.69511,W,20,90,,Morgan only
+159,2024,19/03/2024,Cape Bowling Green,Broadhurst,B1 - North Little Broadhurst,BRO_B1_S3,Slope,3,Morgan,5.7,3,18.94693,147.69511,W,10,90,,Morgan only
+160,2024,19/03/2024,Cape Bowling Green,Broadhurst,B1 - North Little Broadhurst,BRO_B1_C1,Crest,1,Morgan,1.3,3,18.94693,147.69511,W,10,0,well defined crest ,"Peter (PIT), Morgan and Gen"
+161,2024,19/03/2024,Cape Bowling Green,Broadhurst,B1 - North Little Broadhurst,BRO_B1_C2,Crest,2,Morgan,1.2,3,18.94693,147.69511,W,10,0,,Morgan only
+162,2024,19/03/2024,Cape Bowling Green,Broadhurst,B1 - North Little Broadhurst,BRO_B1_C3,Crest,3,Morgan,1.6,3,18.94693,147.69511,W,20,0,,Morgan only
+163,2024,19/03/2024,Cape Bowling Green,Broadhurst,B2 - West Big Broadhurst,BRO_B2_S1,Slope,1,Morgan,8,3.5,18.93093,147.71507,S,10,30,,Morgan only
+164,2024,19/03/2024,Cape Bowling Green,Broadhurst,B2 - West Big Broadhurst,BRO_B2_S2,Slope,2,Morgan,8.4,3.5,18.93093,147.71507,S,20,20,,Morgan only
+165,2024,19/03/2024,Cape Bowling Green,Broadhurst,B2 - West Big Broadhurst,BRO_B2_S3,Slope,3,Morgan,8,3,18.93093,147.71507,S,90,30,,Morgan only
+166,2024,19/03/2024,Cape Bowling Green,Broadhurst,B2 - West Big Broadhurst,BRO_B2_C1,Crest,1,Morgan,1,2.5,18.93093,147.71507,S,10,0,,Morgan only
+167,2024,19/03/2024,Cape Bowling Green,Broadhurst,B2 - West Big Broadhurst,BRO_B2_C2,Crest,2,Morgan,1,2.5,18.93093,147.71507,S,10,0,,Morgan only
+168,2024,19/03/2024,Cape Bowling Green,Broadhurst,B2 - West Big Broadhurst,BRO_B2_C3,Crest,3,Morgan,1,2.5,18.93093,147.71507,S,20,0,,Morgan only
+169,2024,19/03/2024,Cape Bowling Green,Broadhurst,B3 - NE Big Broadhurst,BRO_B3_S1,Slope,1,Morgan,7.5,3,18.84266,147.70868,SW,10,45,Steep sided reef to sand at 10m,Morgan and Gen
+170,2024,19/03/2024,Cape Bowling Green,Broadhurst,B3 - NE Big Broadhurst,BRO_B3_S2,Slope,2,Morgan,8,3.5,18.84266,147.70868,SW,10,90,,Morgan only
+171,2024,19/03/2024,Cape Bowling Green,Broadhurst,B3 - NE Big Broadhurst,BRO_B3_S3,Slope,3,Morgan,8.5,2.5,18.84266,147.70868,SW,10,45,,Morgan only
+172,2024,19/03/2024,Cape Bowling Green,Broadhurst,B3 - NE Big Broadhurst,BRO_B3_C1,Crest,1,Morgan,1.2,3,18.84266,147.70868,SW,50,0,,Morgan and Gen
+173,2024,19/03/2024,Cape Bowling Green,Broadhurst,B3 - NE Big Broadhurst,BRO_B3_C2,Crest,2,Morgan,1.2,3,18.84266,147.70868,SW,70,0,,Morgan and Gen
+174,2024,19/03/2024,Cape Bowling Green,Broadhurst,B3 - NE Big Broadhurst,BRO_B3_C3,Crest,3,Morgan,1.2,3,18.84266,147.70868,SW,70,0,,Morgan only
+175,2024,20/03/2024,Cape Bowling Green,Davies,B1 - NW,DAV_B1_S1,Slope,1,Morgan,8,3,18.83517,147.62733,W,90,10,,Morgan only
+176,2024,20/03/2024,Cape Bowling Green,Davies,B1 - NW,DAV_B1_S2,Slope,2,Morgan,8,3.5,18.83517,147.62733,W,90,10,,Morgan only
+177,2024,20/03/2024,Cape Bowling Green,Davies,B1 - NW,DAV_B1_S3,Slope,3,Morgan,8,3.5,18.83517,147.62733,W,90,20,,Morgan only
+178,2024,20/03/2024,Cape Bowling Green,Davies,B1 - NW,DAV_B1_C1,Crest,1,Morgan,3,3,18.83517,147.62733,W,20,0,,Morgan only
+179,2024,20/03/2024,Cape Bowling Green,Davies,B1 - NW,DAV_B1_C2,Crest,2,Morgan,2.8,3,18.83517,147.62733,W,20,0,,Morgan only
+180,2024,20/03/2024,Cape Bowling Green,Davies,B1 - NW,DAV_B1_C3,Crest,3,Morgan,3,3.5,18.83517,147.62733,W,40,0,,Morgan only
+181,2024,20/03/2024,Cape Bowling Green,Davies,B2 - East channel,DAV_B2_S1,Slope,1,Morgan,8,3,18.82901,147.63034,NE,20,45,,Morgan and Gen
+182,2024,20/03/2024,Cape Bowling Green,Davies,B2 - East channel,DAV_B2_S2,Slope,2,Morgan,8,4,18.82901,147.63034,NE,20,45,,Morgan and Gen
+183,2024,20/03/2024,Cape Bowling Green,Davies,B2 - East channel,DAV_B2_S3,Slope,3,Morgan,8,3.5,18.82901,147.63034,NE,20,45,,Morgan only
+184,2024,20/03/2024,Cape Bowling Green,Davies,B2 - East channel,DAV_B2_C1,Crest,1,Morgan,2.2,3,18.82901,147.63034,NE,80,0,,Morgan and Gen
+185,2024,20/03/2024,Cape Bowling Green,Davies,B2 - East channel,DAV_B2_C2,Crest,2,Morgan,2,2.5,18.82901,147.63034,NE,20,0,,Morgan and Gen
+186,2024,20/03/2024,Cape Bowling Green,Davies,B2 - East channel,DAV_B2_C3,Crest,3,Morgan,2,2,18.82901,147.63034,NE,20,0,,Morgan only
+187,2024,20/03/2024,Cape Bowling Green,Davies,B3 - NE,DAV_B3_S1,Slope,1,Morgan,8,4,18.80293,147.65041,NW,20,90,,
+188,2024,20/03/2024,Cape Bowling Green,Davies,B3 - NE,DAV_B3_S2,Slope,2,Morgan,8,3.5,18.80293,147.65041,NW,10,90,,
+189,2024,20/03/2024,Cape Bowling Green,Davies,B3 - NE,DAV_B3_S3,Slope,3,Morgan,8,4,18.80293,147.65041,NW,10,90,,
+190,2024,20/03/2024,Cape Bowling Green,Davies,B3 - NE,DAV_B3_C1,Crest,1,Morgan,1.2,3,18.80293,147.65041,NW,50,0,,
+191,2024,20/03/2024,Cape Bowling Green,Davies,B3 - NE,DAV_B3_C2,Crest,2,Morgan,1.2,3,18.80293,147.65041,NW,70,0,,
+192,2024,20/03/2024,Cape Bowling Green,Davies,B3 - NE,DAV_B3_C3,Crest,3,Morgan,1.2,3,18.80293,147.65041,NW,70,0,,
+193,2024,20/03/2024,Cape Bowling Green,Chicken,B1 - NW,CHI_B1_S1,Slope,1,Morgan,8,3.5,18.66884,147.70325,East (towards Lagoon),10,45,,
+194,2024,20/03/2024,Cape Bowling Green,Chicken,B1 - NW,CHI_B1_S2,Slope,2,Morgan,8,3.5,18.66884,147.70325,East (towards Lagoon),20,45,,
+195,2024,20/03/2024,Cape Bowling Green,Chicken,B1 - NW,CHI_B1_S3,Slope,3,Morgan,7.4,3,18.66884,147.70325,East (towards Lagoon),20,45,,
+196,2024,20/03/2024,Cape Bowling Green,Chicken,B1 - NW,CHI_B1_C1,Crest,1,Morgan,1.1,2.5,18.66884,147.70325,East (towards Lagoon),80,0,,
+197,2024,20/03/2024,Cape Bowling Green,Chicken,B1 - NW,CHI_B1_C2,Crest,2,Morgan,1.1,2.5,18.66884,147.70325,East (towards Lagoon),80,0,,
+198,2024,20/03/2024,Cape Bowling Green,Chicken,B1 - NW,CHI_B1_C3,Crest,3,Morgan,1.1,2.5,18.66884,147.70325,East (towards Lagoon),80,0,,
+199,2024,20/03/2024,Cape Bowling Green,Chicken,B2 - NE,CHI_B2_S1,Slope,1,Morgan,6.3,3,18.65504,147.7095,NE,20,45,,
+200,2024,20/03/2024,Cape Bowling Green,Chicken,B2 - NE,CHI_B2_S2,Slope,2,Morgan,7.5,3,18.65504,147.7095,NE,40,45,,
+201,2024,20/03/2024,Cape Bowling Green,Chicken,B2 - NE,CHI_B2_S3,Slope,3,Morgan,5.5,3,18.65504,147.7095,NE,20,45,,
+202,2024,20/03/2024,Cape Bowling Green,Chicken,B2 - NE,CHI_B2_C1,Crest,1,Morgan,1,2.5,18.65504,147.7095,NE,80,0,,
+203,2024,20/03/2024,Cape Bowling Green,Chicken,B2 - NE,CHI_B2_C2,Crest,2,Morgan,1,3,18.65504,147.7095,NE,80,0,,
+204,2024,20/03/2024,Cape Bowling Green,Chicken,B2 - NE,CHI_B2_C3,Crest,3,Morgan,1,3,18.65504,147.7095,NE,70,0,,
+205,2024,24/03/2024,Lizard,Ribbon 8 ,B1 - NW,RIB_B1_S1,Slope,1,Morgan,8,3,15.04792,145.71376,S,40,90,,Andrew B and Gen
+206,2024,24/03/2024,Lizard,Ribbon 8 ,B1 - NW,RIB_B1_S2,Slope,2,Morgan,8,3,15.04792,145.71376,S,40,90,,Andrew B and Gen
+207,2024,24/03/2024,Lizard,Ribbon 8 ,B1 - NW,RIB_B1_S3,Slope,3,Morgan,8,2.5,15.04792,145.71376,S,30,45,,Morgan
+208,2024,24/03/2024,Lizard,Ribbon 8 ,B1 - NW,RIB_B1_C1,Crest,1,Morgan,2.4,2,15.04792,145.71376,S,90,0,,Andrew B and Gen
+209,2024,24/03/2024,Lizard,Ribbon 8 ,B1 - NW,RIB_B1_C2,Crest,2,Morgan,2.1,2,15.04792,145.71376,S,80,0,,Andrew B and Gen
+210,2024,24/03/2024,Lizard,Ribbon 8 ,B1 - NW,RIB_B1_C3,Crest,3,Morgan,2.1,2,15.04792,145.71376,S,80,0,,Morgan
+211,2024,24/03/2024,Lizard,Ribbon 8 ,B2 - N,RIB_B2_S1,Slope,1,Morgan,7,3,15.03495,145.71205,NE,20,90,,Andrew B and Gen
+212,2024,24/03/2024,Lizard,Ribbon 8 ,B2 - N,RIB_B2_S2,Slope,2,Morgan,6,2.5,15.03495,145.71205,NE,20,90,,Andrew B and Gen
+213,2024,24/03/2024,Lizard,Ribbon 8 ,B2 - N,RIB_B2_S3,Slope,3,Morgan,5,2,15.03495,145.71205,NE,30,60,,Morgan
+214,2024,24/03/2024,Lizard,Ribbon 8 ,B2 - N,RIB_B2_C1,Crest,1,Morgan,2,2.5,15.03495,145.71205,NE,90,0,,Andrew B and Gen
+215,2024,24/03/2024,Lizard,Ribbon 8 ,B2 - N,RIB_B2_C2,Crest,2,Morgan,2,2.5,15.03495,145.71205,NE,90,0,,Andrew B and Gen
+216,2024,24/03/2024,Lizard,Ribbon 8 ,B2 - N,RIB_B2_C3,Crest,3,Morgan,2,2.5,15.03495,145.71205,NE,90,0,,Morgan
+217,2024,24/03/2024,Lizard,Ribbon 8 ,B3 - Patch,RIB_B3_S1,Slope,1,Morgan,8.5,3.5,15.03962,145.70377,NW,40,90,,Andrew B and Gen
+218,2024,24/03/2024,Lizard,Ribbon 8 ,B3 - Patch,RIB_B3_S2,Slope,2,Morgan,8,3.5,15.03962,145.70377,NW,30,90,,Andrew B and Gen
+219,2024,24/03/2024,Lizard,Ribbon 8 ,B3 - Patch,RIB_B3_S3,Slope,3,Morgan,8,3.5,15.03962,145.70377,NW,40,90,,Morgan
+220,2024,24/03/2024,Lizard,Ribbon 8 ,B3 - Patch,RIB_B3_C1,Crest,1,Morgan,2,3,15.03962,145.70377,NW,90,0,,Andrew B and Gen
+221,2024,24/03/2024,Lizard,Ribbon 8 ,B3 - Patch,RIB_B3_C2,Crest,2,Morgan,2,2.5,15.03962,145.70377,NW,80,0,,Andrew B and Gen
+222,2024,24/03/2024,Lizard,Ribbon 8 ,B3 - Patch,RIB_B3_C3,Crest,3,Morgan,2,2.5,15.03962,145.70377,NW,80,0,,Morgan
+223,2024,24/03/2024,Lizard,North Direction,B1 - Traps,NOR_B1_S1,Slope,1,Morgan,7.5,3.5,14.7496,145.51379,N,40,90,,Andrew B and Gen
+224,2024,24/03/2024,Lizard,North Direction,B1 - Traps,NOR_B1_S2,Slope,2,Morgan,6.4,3,14.7496,145.51379,N,20,60,,Andrew B and Gen
+225,2024,24/03/2024,Lizard,North Direction,B1 - Traps,NOR_B1_S3,Slope,3,Morgan,6,3.5,14.7496,145.51379,N,20,60,,Morgan
+226,2024,24/03/2024,Lizard,North Direction,B1 - Traps,NOR_B1_C1,Crest,1,Morgan,1,3,14.7496,145.51379,N,20,0,,Andrew B and Gen
+227,2024,24/03/2024,Lizard,North Direction,B1 - Traps,NOR_B1_C2,Crest,2,Morgan,1.6,3,14.7496,145.51379,N,20,10,,Andrew B and Gen
+228,2024,24/03/2024,Lizard,North Direction,B1 - Traps,NOR_B1_C3,Crest,3,Morgan,1,3,14.7496,145.51379,N,30,10,,Morgan
+229,2024,24/03/2024,Lizard,North Direction,B2 - East Point,NOR_B2_S1,Slope,1,Morgan,5,3.5,14.74142,145.51036,S,40,90,,Andrew B and Gen
+230,2024,24/03/2024,Lizard,North Direction,B2 - East Point,NOR_B2_S2,Slope,2,Morgan,5,3.5,14.74142,145.51036,S,20,90,,Andrew B and Gen
+231,2024,24/03/2024,Lizard,North Direction,B2 - East Point,NOR_B2_S3,Slope,3,Morgan,5.7,3,14.74142,145.51036,S,20,45,,Morgan
+232,2024,24/03/2024,Lizard,North Direction,B2 - East Point,NOR_B2_C1,Crest,1,Morgan,1,3,14.74142,145.51036,S,20,0,,Andrew B and Gen
+233,2024,24/03/2024,Lizard,North Direction,B2 - East Point,NOR_B2_C2,Crest,2,Morgan,1,3,14.74142,145.51036,S,20,0,,Andrew B and Gen
+234,2024,24/03/2024,Lizard,North Direction,B2 - East Point,NOR_B2_C3,Crest,3,Morgan,1,3.5,14.74142,145.51036,S,10,10,,Morgan
+235,2024,25/03/2024,Princess Charlotte Bay,Davie,B1 - Cay,PCD_B1_S1,Slope,1,Morgan,5.6,2,13.97648,145.4413,East,40,120,Overhang with very low coral cover. Sand slope starts at 6m,Andrew B and Gen
+236,2024,25/03/2024,Princess Charlotte Bay,Davie,B1 - Cay,PCD_B1_S2,Slope,2,Morgan,6.2,2,13.97648,145.4413,East,50,120,,Andrew B and Gen
+237,2024,25/03/2024,Princess Charlotte Bay,Davie,B1 - Cay,PCD_B1_S3,Slope,3,Morgan,5.8,2.5,13.97648,145.4413,East,50,90,,Morgan
+238,2024,25/03/2024,Princess Charlotte Bay,Davie,B1 - Cay,PCD_B1_C1,Crest,1,Morgan,2.3,2,13.97648,145.4413,East,30,0,,Andrew B and Gen
+239,2024,25/03/2024,Princess Charlotte Bay,Davie,B1 - Cay,PCD_B1_C2,Crest,2,Morgan,2.4,2,13.97648,145.4413,East,40,0,,Andrew B and Gen
+240,2024,25/03/2024,Princess Charlotte Bay,Davie,B1 - Cay,PCD_B1_C3,Crest,3,Morgan,2.3,2,13.97648,145.4413,East,30,0,,Morgan
+241,2024,25/03/2024,Princess Charlotte Bay,Davie,B2 - NW,PCD_B2_S1,Slope,1,Morgan,8,3,13.98229,144.43892,SE,30,90,Steep wall to 15m,Andrew B and Gen
+242,2024,25/03/2024,Princess Charlotte Bay,Davie,B2 - NW,PCD_B2_S2,Slope,2,Morgan,8,3,13.98229,144.43892,SE,20,90,,Andrew B and Gen
+243,2024,25/03/2024,Princess Charlotte Bay,Davie,B2 - NW,PCD_B2_S3,Slope,3,Morgan,8,3,13.98229,144.43892,SE,20,90,,Morgan
+244,2024,25/03/2024,Princess Charlotte Bay,Davie,B2 - NW,PCD_B2_C1,Crest,1,Morgan,2.5,2.5,13.98229,144.43892,SE,70,0,Flat reef with moderate bleaching. Strong current with outgoing tide,Andrew B and Gen
+245,2024,25/03/2024,Princess Charlotte Bay,Davie,B2 - NW,PCD_B2_C2,Crest,2,Morgan,2.3,2,13.98229,144.43892,SE,70,0,,Andrew B and Gen
+246,2024,25/03/2024,Princess Charlotte Bay,Davie,B2 - NW,PCD_B2_C3,Crest,3,Morgan,2.1,2,13.98229,144.43892,SE,70,0,,Morgan
+247,2024,25/03/2024,Princess Charlotte Bay,Davie,B3 - NE,PCD_B3_S1,Slope,1,Morgan,8,4,13.96604,144.44685,East,20,0,,Andrew B and Gen
+248,2024,25/03/2024,Princess Charlotte Bay,Davie,B3 - NE,PCD_B3_S2,Slope,2,Morgan,7,3.5,13.96604,144.44685,East,20,0,,Andrew B and Gen
+249,2024,25/03/2024,Princess Charlotte Bay,Davie,B3 - NE,PCD_B3_S3,Slope,3,Morgan,7,4,13.96604,144.44685,East,30,90,,Morgan
+250,2024,25/03/2024,Princess Charlotte Bay,Davie,B3 - NE,PCD_B3_C1,Crest,1,Morgan,2.6,2,13.96604,144.44685,East,30,0,,Andrew B and Gen
+251,2024,25/03/2024,Princess Charlotte Bay,Davie,B3 - NE,PCD_B3_C2,Crest,2,Morgan,2.6,2,13.96604,144.44685,East,30,0,,Andrew B and Gen
+252,2024,25/03/2024,Princess Charlotte Bay,Davie,B3 - NE,PCD_B3_C3,Crest,3,Morgan,2.1,1,13.96604,144.44685,East,10,0,,Morgan
+253,2024,26/03/2024,Cape Grenville,Three Reefs,B1 - NE,THR_B1_S1,Slope,1,Morgan,8.6,4,11.74953,143.89652,SW,30,90,Steep wall to rubble bank at 9m,Andrew B and Gen
+254,2024,26/03/2024,Cape Grenville,Three Reefs,B1 - NE,THR_B1_S2,Slope,2,Morgan,8.3,3,11.74953,143.89652,SW,40,45,,Morgan
+255,2024,26/03/2024,Cape Grenville,Three Reefs,B1 - NE,THR_B1_S3,Slope,3,Morgan,8.8,3,11.74953,143.89652,SW,40,45,,Morgan
+256,2024,26/03/2024,Cape Grenville,Three Reefs,B1 - NE,THR_B1_C1,Crest,1,Morgan,1.9,2.5,11.74953,143.89652,SW,80,0,Flat continuous reef top with lots of small Acropora,Andrew B and Gen
+257,2024,26/03/2024,Cape Grenville,Three Reefs,B1 - NE,THR_B1_C2,Crest,2,Morgan,1.9,3,11.74953,143.89652,SW,70,0,,Andrew B and Gen
+258,2024,26/03/2024,Cape Grenville,Three Reefs,B1 - NE,THR_B1_C3,Crest,3,Morgan,1.8,2.5,11.74953,143.89652,SW,40,0,,Morgan
+259,2024,26/03/2024,Cape Grenville,Three Reefs,B2 - Lagoon,THR_B2_S1,Slope,1,Morgan,6.6,2.5,11.7587,143.89854,E,30,0,Bommies on sand at 7m,Andrew B and Gen
+260,2024,26/03/2024,Cape Grenville,Three Reefs,B2 - Lagoon,THR_B2_S2,Slope,2,Morgan,6.6,3,11.7587,143.89854,E,50,45,,Andrew B and Gen
+261,2024,26/03/2024,Cape Grenville,Three Reefs,B2 - Lagoon,THR_B2_S3,Slope,3,Morgan,6,2.5,11.7587,143.89854,E,60,90,,Morgan
+262,2024,26/03/2024,Cape Grenville,Three Reefs,B2 - Lagoon,THR_B2_C1,Crest,1,Morgan,1.8,3,11.7587,143.89854,E,90,0,,Andrew B and Gen
+263,2024,26/03/2024,Cape Grenville,Three Reefs,B2 - Lagoon,THR_B2_C2,Crest,2,Morgan,1.9,3,11.7587,143.89854,E,80,0,,Andrew B and Gen
+264,2024,26/03/2024,Cape Grenville,Three Reefs,B2 - Lagoon,THR_B2_C3,Crest,3,Morgan,1.9,3,11.7587,143.89854,E,90,0,,Morgan
+265,2024,26/03/2024,Cape Grenville,Three Reefs,B3 - NW,THR_B3_S1,Slope,1,Morgan,6.2,2.5,11.7704,143.87078,E,40,90,,Andrew B and Gen
+266,2024,26/03/2024,Cape Grenville,Three Reefs,B3 - NW,THR_B3_S2,Slope,2,Morgan,5,2.5,11.7704,143.87078,E,40,90,,Andrew B and Gen
+267,2024,26/03/2024,Cape Grenville,Three Reefs,B3 - NW,THR_B3_S3,Slope,3,Morgan,7,3,11.7704,143.87078,E,40,45,,Morgan
+268,2024,26/03/2024,Cape Grenville,Three Reefs,B3 - NW,THR_B3_C1,Crest,1,Morgan,2,1.5,11.7704,143.87078,E,80,0,,Andrew B and Gen
+269,2024,26/03/2024,Cape Grenville,Three Reefs,B3 - NW,THR_B3_C2,Crest,2,Morgan,2,2,11.7704,143.87078,E,80,0,,Andrew B and Gen
+270,2024,26/03/2024,Cape Grenville,Three Reefs,B3 - NW,THR_B3_C3,Crest,3,Morgan,2,2.5,11.7704,143.87078,E,80,0,,Morgan
+271,2024,27/03/2024,Cape Grenville,Monsoon,B1 - NE,MON_B1_S1,Slope,1,Morgan,4.2,2.5,11.1263,143.25686,E,10,0,,Andrew B and Gen
+272,2024,27/03/2024,Cape Grenville,Monsoon,B1 - NE,MON_B1_S2,Slope,2,Morgan,5.7,2,11.1263,143.25686,E,10,0,,Morgan
+273,2024,27/03/2024,Cape Grenville,Monsoon,B1 - NE,MON_B1_S3,Slope,3,Morgan,5.2,2,11.1263,143.25686,E,10,0,,Morgan
+274,2024,27/03/2024,Cape Grenville,Monsoon,B1 - NE,MON_B1_C1,Crest,1,Morgan,2.5,1.5,11.1263,143.25686,E,20,0,,Andrew B and Gen
+275,2024,27/03/2024,Cape Grenville,Monsoon,B1 - NE,MON_B1_C2,Crest,2,Morgan,2.5,2,11.1263,143.25686,E,20,0,,Andrew B and Gen
+276,2024,27/03/2024,Cape Grenville,Monsoon,B1 - NE,MON_B1_C3,Crest,3,Morgan,2.5,2,11.1263,143.25686,E,20,0,,Morgan
+277,2024,27/03/2024,Cape Grenville,Monsoon,B2 - Lagoon,MON_B2_S1,Slope,1,Morgan,5.6,1.5,11.13462,143.25668,W,20,0,,Andrew B and Gen
+278,2024,27/03/2024,Cape Grenville,Monsoon,B2 - Lagoon,MON_B2_S2,Slope,2,Morgan,5.6,1.5,11.13462,143.25668,W,20,0,,Andrew B and Gen
+279,2024,27/03/2024,Cape Grenville,Monsoon,B2 - Lagoon,MON_B2_S3,Slope,3,Morgan,5.7,2,11.13462,143.25668,W,20,0,,Morgan
+280,2024,27/03/2024,Cape Grenville,Monsoon,B2 - Lagoon,MON_B2_C1,Crest,1,Morgan,2.9,2.5,11.13462,143.25668,W,20,0,,Andrew B and Gen
+281,2024,27/03/2024,Cape Grenville,Monsoon,B2 - Lagoon,MON_B2_C2,Crest,2,Morgan,3,2.5,11.13462,143.25668,W,20,0,,Andrew B and Gen
+282,2024,27/03/2024,Cape Grenville,Monsoon,B2 - Lagoon,MON_B2_C3,Crest,3,Morgan,3,2.5,11.13462,143.25668,W,20,0,,Morgan
+283,2024,27/03/2024,Cape Grenville,11-049,B1 - NW,049_B1_S1,Slope,1,Morgan,5,3,11.3532,143.32353,E,5,30,,Andrew B and Gen
+284,2024,27/03/2024,Cape Grenville,11-049,B1 - NW,049_B1_S2,Slope,2,Morgan,5,3,11.3532,143.32353,E,5,30,,Morgan
+285,2024,27/03/2024,Cape Grenville,11-049,B1 - NW,049_B1_S3,Slope,3,Morgan,5.5,3.5,11.3532,143.32353,E,5,30,,Morgan
+286,2024,27/03/2024,Cape Grenville,11-049,B1 - NW,049_B1_C1,Crest,1,Morgan,1.3,1.3,11.3532,143.32353,E,<5,0,,Andrew B and Gen
+287,2024,27/03/2024,Cape Grenville,11-049,B1 - NW,049_B1_C2,Crest,2,Morgan,1.5,1.5,11.3532,143.32353,E,<5,0,,Andrew B and Gen
+288,2024,27/03/2024,Cape Grenville,11-049,B1 - NW,049_B1_C3,Crest,3,Morgan,1.2,2.2,11.3532,143.32353,E,<5,0,,Morgan
+289,2024,27/03/2024,Cape Grenville,11-049,B2 - SW,049_B2_S1,Slope,1,Morgan,3,1.5,11.36377,143.32673,W,<5,0,,Andrew B and Gen
+290,2024,27/03/2024,Cape Grenville,11-049,B2 - SW,049_B2_S2,Slope,2,Morgan,3,1.5,11.36377,143.32673,W,<5,0,,Andrew B and Gen
+291,2024,27/03/2024,Cape Grenville,11-049,B2 - SW,049_B2_S3,Slope,3,Morgan,3,1.5,11.36377,143.32673,W,<5,0,,Morgan
+292,2024,27/03/2024,Cape Grenville,11-049,B2 - SW,049_B2_C1,Crest,1,Morgan,1.4,1,11.36377,143.32673,W,5,0,,Andrew B and Gen
+293,2024,27/03/2024,Cape Grenville,11-049,B2 - SW,049_B2_C2,Crest,2,Morgan,1.6,1,11.36377,143.32673,W,5,0,,Andrew B and Gen
+294,2024,27/03/2024,Cape Grenville,11-049,B2 - SW,049_B2_C3,Crest,3,Morgan,1.5,1,11.36377,143.32673,W,10,0,,Morgan
+295,2024,28/03/2024,Princess Charlotte Bay,13-124,B1 - NW,124_B1_S1,Slope,1,Morgan,5.4,2,13.85278,144.06941,SE,<5,0,,Andrew B and Gen
+296,2024,28/03/2024,Princess Charlotte Bay,13-124,B1 - NW,124_B1_S2,Slope,2,Morgan,5,2,13.85278,144.06941,SE,<5,0,,Morgan
+297,2024,28/03/2024,Princess Charlotte Bay,13-124,B1 - NW,124_B1_S3,Slope,3,Morgan,4.6,1,13.85278,144.06941,SE,<5,0,,Morgan
+298,2024,28/03/2024,Princess Charlotte Bay,13-124,B1 - NW,124_B1_C1,Crest,1,Morgan,2.5,3,13.85278,144.06941,SE,5,0,,Andrew B and Gen
+299,2024,28/03/2024,Princess Charlotte Bay,13-124,B1 - NW,124_B1_C2,Crest,2,Morgan,2.5,3,13.85278,144.06941,SE,5,0,,Morgan
+300,2024,28/03/2024,Princess Charlotte Bay,13-124,B1 - NW,124_B1_C3,Crest,3,Morgan,2.5,3,13.85278,144.06941,SE,5,0,,Morgan
+301,2024,28/03/2024,Princess Charlotte Bay,13-124,B2 - SE,124_B2_S1,Slope,1,Morgan,5.7,2.5,13.88416,144.09117,E,10,0,,Andrew B and Gen
+302,2024,28/03/2024,Princess Charlotte Bay,13-124,B2 - SE,124_B2_S2,Slope,2,Morgan,5.4,2.5,13.88416,144.09117,E,10,0,,Morgan
+303,2024,28/03/2024,Princess Charlotte Bay,13-124,B2 - SE,124_B2_S3,Slope,3,Morgan,5,3,13.88416,144.09117,E,10,0,,Morgan
+304,2024,28/03/2024,Princess Charlotte Bay,13-124,B2 - SE,124_B2_C1,Crest,1,Morgan,2.5,2.5,13.88416,144.09117,E,40,0,,Andrew B and Gen
+305,2024,28/03/2024,Princess Charlotte Bay,13-124,B2 - SE,124_B2_C2,Crest,2,Morgan,2.5,2.5,13.88416,144.09117,E,40,0,,Andrew B and Gen
+306,2024,28/03/2024,Princess Charlotte Bay,13-124,B2 - SE,124_B2_C3,Crest,3,Morgan,2.1,2.5,13.88416,144.09117,E,40,0,,Morgan
+307,2024,28/03/2024,Princess Charlotte Bay,Corbett,B1 - N Lagoon,COR_B1_S1,Slope,1,Morgan,6.5,3,13.88941,144.22057,W,20,90,Steep wall to 7m,Andrew B and Gen
+308,2024,28/03/2024,Princess Charlotte Bay,Corbett,B1 - N Lagoon,COR_B1_S2,Slope,2,Morgan,6.2,3,13.88941,144.22057,W,20,90,,Andrew B and Gen
+309,2024,28/03/2024,Princess Charlotte Bay,Corbett,B1 - N Lagoon,COR_B1_S3,Slope,3,Morgan,5.5,2,13.88941,144.22057,W,20,90,,Morgan
+310,2024,28/03/2024,Princess Charlotte Bay,Corbett,B1 - N Lagoon,COR_B1_C1,Crest,1,Morgan,2,2.5,13.88941,144.22057,W,40,0,,Andrew B and Gen
+311,2024,28/03/2024,Princess Charlotte Bay,Corbett,B1 - N Lagoon,COR_B1_C2,Crest,2,Morgan,2,2.5,13.88941,144.22057,W,40,0,,Andrew B and Gen
+312,2024,28/03/2024,Princess Charlotte Bay,Corbett,B1 - N Lagoon,COR_B1_C3,Crest,3,Morgan,2,3,13.88941,144.22057,W,40,0,,Morgan
+313,2024,28/03/2024,Princess Charlotte Bay,Corbett,B2 - NW Lighthouse,COR_B2_S1,Slope,1,Morgan,5,2.5,13.89547,144.22967,SE,20,30,Gradual slope,Andrew B and Gen
+314,2024,28/03/2024,Princess Charlotte Bay,Corbett,B2 - NW Lighthouse,COR_B2_S2,Slope,2,Morgan,5,2.5,13.89547,144.22967,SE,20,30,,Andrew B and Gen
+315,2024,28/03/2024,Princess Charlotte Bay,Corbett,B2 - NW Lighthouse,COR_B2_S3,Slope,3,Morgan,6,3,13.89547,144.22967,SE,20,30,,Morgan
+316,2024,28/03/2024,Princess Charlotte Bay,Corbett,B2 - NW Lighthouse,COR_B2_C1,Crest,1,Morgan,2.8,2.5,13.89547,144.22967,SE,20,0,Poorly defined crest. Moderate bleaching in shallows,Andrew B and Gen
+317,2024,28/03/2024,Princess Charlotte Bay,Corbett,B2 - NW Lighthouse,COR_B2_C2,Crest,2,Morgan,2.8,3,13.89547,144.22967,SE,20,0,,Andrew B and Gen
+318,2024,28/03/2024,Princess Charlotte Bay,Corbett,B2 - NW Lighthouse,COR_B2_C3,Crest,3,Morgan,3,2.5,13.89547,144.22967,SE,40,0,,Morgan
+319,2024,29/03/2024,Lizard,Lizard,B1 - Washing Machine,LIZ_B1_S1,Slope,1,Morgan,8,3.5,14.64735,145.45853,S,20,90,,Andrew B and Gen
+320,2024,29/03/2024,Lizard,Lizard,B1 - Washing Machine,LIZ_B1_S2,Slope,2,Morgan,8.3,4,14.64735,145.45853,S,20,90,,Andrew B and Gen
+321,2024,29/03/2024,Lizard,Lizard,B1 - Washing Machine,LIZ_B1_S3,Slope,3,Morgan,7.5,3,14.64735,145.45853,S,20,45,,Morgan
+322,2024,29/03/2024,Lizard,Lizard,B1 - Washing Machine,LIZ_B1_C1,Crest,1,Morgan,2.3,2.5,14.64735,145.45853,S,20,0,,Andrew B and Gen
+323,2024,29/03/2024,Lizard,Lizard,B1 - Washing Machine,LIZ_B1_C2,Crest,2,Morgan,2.3,2.5,14.64735,145.45853,S,20,0,,Andrew B and Gen
+324,2024,29/03/2024,Lizard,Lizard,B1 - Washing Machine,LIZ_B1_C3,Crest,3,Morgan,2.3,2.5,14.64735,145.45853,S,20,0,,Morgan
+325,2024,29/03/2024,Lizard,Lizard,B2 - Mermaid,LIZ_B2_S1,Slope,1,Morgan,7,3.5,14.64609,145.45388,S,10,45,,Andrew B and Gen
+326,2024,29/03/2024,Lizard,Lizard,B2 - Mermaid,LIZ_B2_S2,Slope,2,Morgan,7,3.5,14.64609,145.45388,S,10,45,,Andrew B and Gen
+327,2024,29/03/2024,Lizard,Lizard,B2 - Mermaid,LIZ_B2_S3,Slope,3,Morgan,5.5,3,14.64609,145.45388,S,10,45,,Morgan
+328,2024,29/03/2024,Lizard,Lizard,B2 - Mermaid,LIZ_B2_C1,Crest,1,Morgan,1.5,3,14.64609,145.45388,S,5,0,,Andrew B and Gen
+329,2024,29/03/2024,Lizard,Lizard,B2 - Mermaid,LIZ_B2_C2,Crest,2,Morgan,1.5,3,14.64609,145.45388,S,5,0,,Andrew B and Gen
+330,2024,29/03/2024,Lizard,Lizard,B2 - Mermaid,LIZ_B2_C3,Crest,3,Morgan,1.5,3,14.64609,145.45388,S,5,0,,Morgan
+331,2024,29/03/2024,Lizard,Lizard,B3 - Trimodal,LIZ_B3_S1,Slope,1,Morgan,6,2.5,14.69988,145.44826,S,5,90,,Andrew B and Gen
+332,2024,29/03/2024,Lizard,Lizard,B3 - Trimodal,LIZ_B3_S2,Slope,2,Morgan,6,2.5,14.69988,145.44826,S,5,40,,Andrew B and Gen
+333,2024,29/03/2024,Lizard,Lizard,B3 - Trimodal,LIZ_B3_S3,Slope,3,Morgan,6.5,2,14.69988,145.44826,S,5,30,,Morgan
+334,2024,29/03/2024,Lizard,Lizard,B3 - Trimodal,LIZ_B3_C1,Crest,1,Morgan,1.7,3,14.69988,145.44826,S,20,0,,Andrew B and Gen
+335,2024,29/03/2024,Lizard,Lizard,B3 - Trimodal,LIZ_B3_C2,Crest,2,Morgan,1.7,3,14.69988,145.44826,S,20,0,,Andrew B and Gen
+336,2024,29/03/2024,Lizard,Lizard,B3 - Trimodal,LIZ_B3_C3,Crest,3,Morgan,1.8,3,14.69988,145.44826,S,20,0,,Morgan
+337,2024,29/03/2024,Lizard,Lizard,B4 - Lagoon,LIZ_B4_S1,Slope,1,Morgan,5,3.5,14.68624,145.45953,SW,<5,90,,Andrew B and Gen
+338,2024,29/03/2024,Lizard,Lizard,B4 - Lagoon,LIZ_B4_S2,Slope,2,Morgan,5,3.5,14.68624,145.45953,SW,<5,90,,Andrew B and Gen
+339,2024,29/03/2024,Lizard,Lizard,B4 - Lagoon,LIZ_B4_S3,Slope,3,Morgan,6.1,3,14.68624,145.45953,SW,<5,90,,Morgan
+340,2024,29/03/2024,Lizard,Lizard,B4 - Lagoon,LIZ_B4_C1,Crest,1,Morgan,1.5,3.5,14.68624,145.45953,SW,<5,0,,Andrew B and Gen
+341,2024,29/03/2024,Lizard,Lizard,B4 - Lagoon,LIZ_B4_C2,Crest,2,Morgan,1.5,3,14.68624,145.45953,SW,<5,0,,Andrew B and Gen
+342,2024,29/03/2024,Lizard,Lizard,B4 - Lagoon,LIZ_B4_C3,Crest,3,Morgan,1.7,3.5,14.68624,145.45953,SW,<5,0,,Morgan
+343,2024,01/04/2024,Lizard,Cormrant,B1 - NW,CMT_B1_S1,Slope,1,Morgan,8,3.5,14.6369,145.63351,W,40,60,,Andrew B and Gen
+344,2024,01/04/2024,Lizard,Cormrant,B1 - NW,CMT_B1_S2,Slope,2,Morgan,8.5,3.5,14.6369,145.63351,W,30,60,,Andrew B and Gen
+345,2024,01/04/2024,Lizard,Cormrant,B1 - NW,CMT_B1_S3,Slope,3,Morgan,9,3.5,14.6369,145.63351,W,30,60,,Morgan
+346,2024,01/04/2024,Lizard,Cormrant,B1 - NW,CMT_B1_C1,Crest,1,Morgan,1.8,2.5,14.6369,145.63351,W,90,0,,Andrew B and Gen
+347,2024,01/04/2024,Lizard,Cormrant,B1 - NW,CMT_B1_C2,Crest,2,Morgan,1.8,2.5,14.6369,145.63351,W,90,0,,Andrew B and Gen
+348,2024,01/04/2024,Lizard,Cormrant,B1 - NW,CMT_B1_C3,Crest,3,Morgan,1.9,3,14.6369,145.63351,W,90,0,,Morgan
+349,2024,01/04/2024,Lizard,Cormrant,B2 - Lagoon,CMT_B2_S1,Slope,1,Morgan,7.2,2,14.63908,145.63638,W,10,0,,Andrew B and Gen
+350,2024,01/04/2024,Lizard,Cormrant,B2 - Lagoon,CMT_B2_S2,Slope,2,Morgan,7,2,14.63908,145.63638,W,20,30,,Andrew B and Gen
+351,2024,01/04/2024,Lizard,Cormrant,B2 - Lagoon,CMT_B2_S3,Slope,3,Morgan,6.7,2,14.63908,145.63638,W,20,30,,Morgan
+352,2024,01/04/2024,Lizard,Cormrant,B2 - Lagoon,CMT_B2_C1,Crest,1,Morgan,1.7,3,14.63908,145.63638,W,90,0,,Andrew B and Gen
+353,2024,01/04/2024,Lizard,Cormrant,B2 - Lagoon,CMT_B2_C2,Crest,2,Morgan,1.7,3,14.63908,145.63638,W,90,0,,Andrew B and Gen
+354,2024,01/04/2024,Lizard,Cormrant,B2 - Lagoon,CMT_B2_C3,Crest,3,Morgan,1.7,3,14.63908,145.63638,W,90,0,,Morgan
+355,2024,02/04/2024,Cairns,Milln,B1 - NW,MIL_B1_S1,Slope,1,Morgan,8.5,3.5,16.7897,146.26553,W,20,60,,Andrew B and Gen
+356,2024,02/04/2024,Cairns,Milln,B1 - NW,MIL_B1_S2,Slope,2,Morgan,8.5,4,16.7897,146.26553,W,20,60,,Andrew B and Gen
+357,2024,02/04/2024,Cairns,Milln,B1 - NW,MIL_B1_S3,Slope,3,Morgan,8,3.5,16.7897,146.26553,W,20,60,,Morgan
+358,2024,02/04/2024,Cairns,Milln,B1 - NW,MIL_B1_C1,Crest,1,Morgan,1.8,2,16.7897,146.26553,W,40,20,,Andrew B and Gen
+359,2024,02/04/2024,Cairns,Milln,B1 - NW,MIL_B1_C2,Crest,2,Morgan,1.8,2,16.7897,146.26553,W,40,0,,Andrew B and Gen
+360,2024,02/04/2024,Cairns,Milln,B1 - NW,MIL_B1_C3,Crest,3,Morgan,1.8,2,16.7897,146.26553,W,40,0,,Morgan
+361,2024,02/04/2024,Cairns,Milln,B2 - Lagoon,MIL_B2_S1,Slope,1,Morgan,8,3.5,16.79465,146.26364,W,10,60,Directly below boat on orange mooring,Andrew B and Gen
+362,2024,02/04/2024,Cairns,Milln,B2 - Lagoon,MIL_B2_S2,Slope,2,Morgan,8,3.5,16.79465,146.26364,W,10,60,,Andrew B and Gen
+363,2024,02/04/2024,Cairns,Milln,B2 - Lagoon,MIL_B2_S3,Slope,3,Morgan,8,4,16.79465,146.26364,W,10,60,,Morgan
+364,2024,02/04/2024,Cairns,Milln,B2 - Lagoon,MIL_B2_C1,Crest,1,Morgan,1.2,3,16.79465,146.26364,W,60,0,,Andrew B and Gen
+365,2024,02/04/2024,Cairns,Milln,B2 - Lagoon,MIL_B2_C2,Crest,2,Morgan,1.2,3,16.79465,146.26364,W,60,0,,Andrew B and Gen
+366,2024,02/04/2024,Cairns,Milln,B2 - Lagoon,MIL_B2_C3,Crest,3,Morgan,1.2,3,16.79465,146.26364,W,60,0,,Morgan

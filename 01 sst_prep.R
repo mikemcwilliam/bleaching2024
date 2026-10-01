@@ -150,8 +150,9 @@ sst.max24 <- st_read("data/noaa_sst/GBR/gbr.max.2024.shp")
 sst16 <- cbind(longitude=st_coordinates(sst.max16)[,1], latitude=st_coordinates(sst.max16)[,2], st_drop_geometry(sst.max16))
 sst24 <- cbind(longitude=st_coordinates(sst.max24)[,1], latitude=st_coordinates(sst.max24)[,2], st_drop_geometry(sst.max24))
 
+
 # transect coords
-coord24 <- read.csv("data/info/sitecoordsX.csv") 
+coord24 <- read.csv("data/info/sitecoords2024.csv") 
 coord16 <- read.csv("data/info/sitecoords2016.csv") 
 head(coord24)
 
@@ -221,8 +222,8 @@ coord16$gridID <- paste(coord16$grid.lat, coord16$grid.lon)
 ggplot(coord16, aes(grid.lat, revised_lat))+geom_point()+geom_abline()
 ggplot(coord16, aes(grid.lon, revised_long))+geom_point()+geom_abline()
 
-#write.csv(coord16, "data/info/coordmatch16.csv")
-#write.csv(coord24, "data/info/coordmatch24.csv")
+#write.csv(coord16, "data/info/grids16.csv")
+#write.csv(coord24, "data/info/grids24.csv")
 
 ###################################################
 #  continous time series for surveyed reefs (2015 - 2024)

@@ -1,5 +1,16 @@
 
-sites$Reg3 <- ifelse(sites$Region=="Cape Grenville", "I", ifelse(sites$Region=="Princess Charlotte Bay", "II", ifelse(sites$Region=="Lizard", "III", ifelse(sites$Region=="Cairns", "IV", ifelse(sites$Region=="Cape Bowling Green", "V", ifelse(sites$Region=="Hydrographers Passage", "VI", ifelse(sites$Region=="Capricorn Bunkers", "VII",NA )))))))
+
+sites$Reg3 <- sites$region2 #ifelse(sites$Region=="Cape Grenville", "I", ifelse(sites$Region=="Princess Charlotte Bay", "II", ifelse(sites$Region=="Lizard", "III", ifelse(sites$Region=="Cairns", "IV", ifelse(sites$Region=="Cape Cleveland", "V", ifelse(sites$Region=="Hydrographers Passage", "VI", ifelse(sites$Region=="Capricorn Bunkers", "VII",NA )))))))
+
+
+
+reefs <- na.omit(unique(tdf[,c("region2","Reef", "GPS.S", "GPS.E")]))
+reefs$endlon <- reefs$GPS.E + 5
+reefs$endlat <- - reefs$GPS.S
+
+reefs2 <- na.omit(unique(dat[,c("region2", "Reef")]))
+reefs2[,c("lat", "lon")] <- reefs[match(reefs2$Reef, reefs$Reef), c("GPS.S", "GPS.E")]
+reefs2
 
 freqmap <- ggplot()+
 #geom_raster(data = sst.max, aes(x =longitude, y = latitude, fill = dhw))+
@@ -16,6 +27,7 @@ scale_color_manual(values=c("grey", "#fecc5c", "#fd8d3c", "#e31a1c", "#500000"))
 #geom_sf(data=bound2)+
 # scale_colour_distiller(palette="Spectral")+
  #scale_colour_gradientn(colours = colz, values=colvals, limits=dhw.lims)+ # breaks=0
+   geom_point(data=reefs2, aes(x=lon,  y= -lat), size=1, fill="pink", shape=21, stroke=0.1)+
  coord_sf(ylim=c(ylim[1]+2.5, ylim[2]-0.3), xlim=c(xlim[1], xlim[2]))+
  labs(colour="N events\n(> 6 DHW)")+
  guides(colour=guide_legend(override.aes=list(size=3)))+
@@ -24,58 +36,36 @@ scale_color_manual(values=c("grey", "#fecc5c", "#fd8d3c", "#e31a1c", "#500000"))
 freqmap
 
 
-
-reefs <- unique(tdf[,c("Region","Reef", "GPS.S", "GPS.E")])
-reefs$endlon <- reefs$GPS.E + 5
-reefs$endlat <- - reefs$GPS.S
-
-reefs2 <- unique(dat[,c("Region", "Reef")])
-reefs2[,c("lat", "lon")] <- reefs[match(reefs2$Reef, reefs$Reef), c("GPS.S", "GPS.E")]
-reefs2
+reefs2$Reg3 <- sites$region2[match(reefs2$region2, sites$region2)]
+ 
 
 reefs2$endlon <- reefs2$lon + 3
 reefs2$endlat <- - reefs2$lat
 
+
 reefs2$endlat2 <- reefs2$endlat
-reefs2$endlat2[reefs2$Reef=="Monsoon"] <- reefs2$endlat2[reefs2$Reef=="Monsoon"] + 1.3
-reefs2$endlat2[reefs2$Reef=="Three Reefs"] <- reefs2$endlat2[reefs2$Reef=="Three Reefs"] + 0.9
-reefs2$endlat2[reefs2$Reef=="11-049"] <- reefs2$endlat2[reefs2$Reef=="11-049"] + 1
+reefs2$endlon2 <- reefs2$endlon
 
-reefs2$endlat2[reefs2$Reef=="13-124"] <- reefs2$endlat2[reefs2$Reef=="13-124"] + 2
-reefs2$endlat2[reefs2$Reef=="Corbett"] <- reefs2$endlat2[reefs2$Reef=="Corbett"] + 1.5
-reefs2$endlat2[reefs2$Reef=="Davie"] <- reefs2$endlat2[reefs2$Reef=="Davie"] + 1
+reefs2$endlon2[reefs2$Reg3=="Cape Grenville"] <- reefs2$endlon2[reefs2$Reg3=="Cape Grenville"]  - 1.9
+reefs2$endlon2[reefs2$Reg3=="Princess Charlotte Bay"] <- reefs2$endlon2[reefs2$Reg3=="Princess Charlotte Bay"]  - 2.2
+reefs2$endlon2[reefs2$Reg3=="Cooktown"] <- reefs2$endlon2[reefs2$Reg3=="Cooktown"]  - 1.5
+reefs2$endlon2[reefs2$Reg3=="Cairns"] <- reefs2$endlon2[reefs2$Reg3=="Cairns"]  - 1.2
+reefs2$endlon2[reefs2$Reg3=="Townsville"] <- reefs2$endlon2[reefs2$Reg3=="Townsville"]  - 1.5
+reefs2$endlon2[reefs2$Reg3=="Mackay"] <- reefs2$endlon2[reefs2$Reg3=="Mackay"]  - 1.2
+reefs2$endlon2[reefs2$Reg3=="Gladstone"] <- reefs2$endlon2[reefs2$Reg3=="Gladstone"]  - 1.6
 
-reefs2$endlat2[reefs2$Reef=="Cormrant"] <- reefs2$endlat2[reefs2$Reef=="Cormrant"] + 0.9
-reefs2$endlat2[reefs2$Reef=="Lizard"] <- reefs2$endlat2[reefs2$Reef=="Lizard"] +0.4
-reefs2$endlat2[reefs2$Reef=="Ribbon 8 "] <- reefs2$endlat2[reefs2$Reef=="Ribbon 8 "] - 0.3
-reefs2$endlat2[reefs2$Reef=="North Direction"] <- reefs2$endlat2[reefs2$Reef=="North Direction"] -0
+rtext <- aggregate(endlon~Reg3, reefs2, mean) 
+rtext$Reg3 <- as.character(rtext$Reg3)
+rtext$endlat <- aggregate(endlat~Reg3, reefs2, mean)$endlat
+rtext$endlat[rtext$Reg3=="Mackay"] <- rtext$endlat[rtext$Reg3=="Mackay"] + 0.3
+#rtext$endlat[rtext$Reg3=="I"] <- rtext$endlat[rtext$Reg3=="I"]+1
+rtext$Reg3[rtext$Reg3 %in% c("Princess Charlotte Bay")] <- "Prin. Char. Bay"
 
-reefs2$endlat2[reefs2$Reef=="Elford"] <- reefs2$endlat2[reefs2$Reef=="Elford"] -0.6
-reefs2$endlat2[reefs2$Reef=="Moore"] <- reefs2$endlat2[reefs2$Reef=="Moore"] - 1.1
-reefs2$endlat2[reefs2$Reef=="Thetford"] <- reefs2$endlat2[reefs2$Reef=="Thetford"] -0.1
-reefs2$endlat2[reefs2$Reef=="Milln"] <- reefs2$endlat2[reefs2$Reef=="Milln"] + 0.4
-
-reefs2$endlat2[reefs2$Reef=="Broadhurst"] <- reefs2$endlat2[reefs2$Reef=="Broadhurst"] - 0.7
-reefs2$endlat2[reefs2$Reef=="Davies"] <- reefs2$endlat2[reefs2$Reef=="Davies"] - 0.3
-reefs2$endlat2[reefs2$Reef=="Chicken"] <- reefs2$endlat2[reefs2$Reef=="Chicken"] + 0.1
-
-reefs2$endlat2[reefs2$Reef=="Chavel"] <- reefs2$endlat2[reefs2$Reef=="Chavel"] - 0.7
-reefs2$endlat2[reefs2$Reef=="Goble"] <- reefs2$endlat2[reefs2$Reef=="Goble"] - 0.2
-reefs2$endlat2[reefs2$Reef=="Bugatti"] <- reefs2$endlat2[reefs2$Reef=="Bugatti"] - 0.2
-
-reefs2$endlat2[reefs2$Reef=="Wistari"] <- reefs2$endlat2[reefs2$Reef=="Wistari"] - 0.5
-reefs2$endlat2[reefs2$Reef=="Heron"] <- reefs2$endlat2[reefs2$Reef=="Heron"] - 0
-reefs2$endlat2[reefs2$Reef=="Wilson"] <- reefs2$endlat2[reefs2$Reef=="Wilson"] +0.5
-
-reefs2$Reg3 <- sites$Reg3[match(reefs2$Region, sites$Region)]
+head(time.all)
+ unique(time.all$last) 
  
-circles <- aggregate(endlon~Reg3, reefs2, median) 
-circles$endlat <- aggregate(endlat~Reg3, reefs2, median)$endlat
-circles$endlat[circles$Reg3=="II"] <- circles$endlat[circles$Reg3=="II"]+1.5
-circles$endlat[circles$Reg3=="I"] <- circles$endlat[circles$Reg3=="I"]+1
-circles
+lastcols <- c(viridis(4, direction = -1, option = "D"), "grey")
 
- 
 lastmap <- ggplot()+
 #geom_raster(data = sst.max, aes(x =longitude, y = latitude, fill = dhw))+
 #geom_sf(data=gbrmax24,  aes(col=dhw), size=0.05)+
@@ -83,12 +73,14 @@ lastmap <- ggplot()+
 #geom_sf(data=gbr.sf,  lwd=0.1, col=alpha("grey40",0.8), fill=NA)+
 geom_sf(data=qld.sf, col="grey50", fill="grey95", size=0.01)+ 
 #geom_point(data=freqs[freqs$N==6,], aes(X, Y, col=aboveN), size=0.5)+
-scale_colour_viridis(direction=-1, discrete=T)+
+#scale_colour_viridis(direction=-1, discrete=T)+
+scale_colour_manual(values=lastcols)+
 geom_point(data=freq.all, aes(X, Y), col="grey", size=0.01)+
-geom_point(data=time.all, aes(X, Y, col=as.factor(last)), size=0.01)+
- geom_segment(data=reefs2, aes(x=lon, xend=endlon, y= -lat, yend= endlat2), size=0.05)+
- geom_point(data=circles, aes(endlon, endlat), size=9, shape=21, fill="white", stroke=0.2, col="white")+ # use
-  geom_text(data=circles, aes(endlon, endlat, label=Reg3), size=2.8)+ #use
+geom_point(data=time.all2, aes(X, Y, col=as.factor(last)), size=0.01)+
+ geom_segment(data=reefs2, aes(x=lon, xend=endlon2, y= -lat, yend= endlat2), size=0.05)+
+  geom_point(data=reefs2, aes(x=lon,  y= -lat), size=1, fill="pink", shape=21, stroke=0.1)+
+ #geom_point(data=rtext, aes(endlon, endlat), size=9, shape=21, fill="white", stroke=0.2, col="white")+ # use
+  geom_text(data=rtext, aes(endlon, endlat, label=Reg3), size=2.2)+ #use
  #geom_text(data=reefs2, aes(x=endlon+0.01, y= endlat2, label=Reef), hjust=0, size=1.8)+
 #geom_point(data=towns, aes(long, lat), shape=15, size=1)+
 #geom_text(data=towns, aes(long-0.25, lat, label=name), hjust=1, size=1.5, fontface="bold")+
@@ -99,30 +91,30 @@ geom_point(data=time.all, aes(X, Y, col=as.factor(last)), size=0.01)+
   guides(colour=guide_legend(override.aes=list(size=3)))+
   scale_x_continuous(breaks=c(142, 146, 150))+
   coord_sf(ylim=c(ylim[1]+2.5, ylim[2]-0.3), xlim=c(xlim[1]+0.2, xlim[2]+4))+
- theme_classic()+theme(axis.text=element_text(size=6),axis.title=element_blank(),  legend.key.width=unit(1, "mm"),legend.key.height=unit(5, "mm"), axis.line=element_blank(),   plot.title=element_text(size=9, hjust=0.1),legend.position=c(0.85, 0.75),legend.title=element_text(size=6, face="bold") )
+ theme_classic()+theme(axis.text=element_text(size=6),axis.title=element_blank(),  legend.key.width=unit(1, "mm"),legend.key.height=unit(5, "mm"), axis.line=element_blank(),   plot.title=element_text(size=9, hjust=0.1),legend.position=c(0.8, 0.75),legend.title=element_text(size=6, face="bold") )
 lastmap
 
 
 #################################################################
 # residuals..... 
 
+sres$Reg2 <- sres$region2 
 
-sres$Reg3 <- ifelse(sres$Region=="Cape Grenville", "I", ifelse(sres$Region=="Princess Charlotte Bay", "II", ifelse(sres$Region=="Lizard", "III", ifelse(sres$Region=="Cairns", "IV", ifelse(sres$Region=="Cape Bowling Green", "V", ifelse(sres$Region=="Hydrographers Passage", "VI", ifelse(sres$Region=="Capricorn Bunkers", "VII",NA )))))))
-
-
-sres$Reg2 <- as.character(sres$Region)
+sres$Reg2 <- as.character(sres$region2)
 sres$Reg2[sres$Reg2=="Princess Charlotte Bay"] <- "Princess\nCharlotte Bay"
 sres$Reg2[sres$Reg2=="Hydrographers Passage"] <- "Hydrographers\nPassage"
-sres$Reg2[sres$Reg2=="Cape Bowling Green"] <- "Cape Bowling\nGreen"
+sres$Reg2[sres$Reg2=="Cape Cleveland"] <- "Cape Bowling\nGreen"
 sres$Reg2[sres$Reg2=="Capricorn Bunkers"] <- "Capricorn\nBunkers"
 sres$Reg2[sres$Reg2=="Cape Grenville"] <- "Cape\nGrenville"
 
+sres$Reg2 <- factor(sres$Reg2, levels=c("Cape\nGrenville", "Princess\nCharlotte Bay", "Cooktown", "Cairns", "Townsville", "Mackay", "Gladstone"))
+
 regions
 
-sres$Reg2 <- factor(sres$Reg2, levels=rev(c("Capricorn\nBunkers","Hydrographers\nPassage","Cape Bowling\nGreen", "Cairns","Lizard","Princess\nCharlotte Bay","Cape\nGrenville")))
+#sres$Reg2 <- factor(sres$Reg2, levels=rev(c("Capricorn\nBunkers","Hydrographers\nPassage","Cape Bowling\nGreen", "Cairns","Lizard","Princess\nCharlotte Bay","Cape\nGrenville")))
 
-residav <- aggregate(bimod~Reg3, sres[sres$Zone=="Crest",], mean)
-residav
+#residav <- aggregate(bimod~Reg3, sres[sres$Zone=="Crest",], mean)
+#residav
 
 # bmod? 
 residplot2 <- ggplot(sres[sres$Zone=="Crest",], aes(bimod, reorder(Reef, -GPS.S)))+
@@ -138,10 +130,10 @@ geom_boxplot( size=0.18, outlier.size=0.1, fill="grey80")+
 #scale_fill_manual(values=rcols)+
 #scale_fill_viridis(discrete=T, direction=-1)+
 scale_fill_viridis()+
-facet_wrap(~Reg3, ncol=1, scales="free_y", strip.position="left")+
+facet_wrap(~Reg2, ncol=1, scales="free_y", strip.position="left")+
 theme_classic()+theme(axis.line.y=element_blank(), 
 strip.background=element_blank(), 
-strip.text.y.left=element_text(size=8, angle=0, hjust=1),
+strip.text.y.left=element_text(size=6, angle=0, hjust=1),
  axis.text.y=element_blank(), axis.ticks=element_blank(),axis.title.x=element_text(size=9), panel.margin.y=unit(2, "mm"), panel.background=element_rect(fill="grey96"))+
 labs(y="", x="Deviation from expected\nbleaching (2024)")
 residplot2
@@ -232,6 +224,8 @@ heatplot2
 
 andat
 
+residplot3 <- plot_grid(NULL, residplot2, rel_widths=c(-0.13, 1))
+
 fig3 <- plot_grid(
 plot_grid(
 NULL, 
@@ -244,7 +238,7 @@ x2+labs(y="% Acropora (2024)")+theme(axis.title=element_text(size=9), axis.line=
 nrow=1, labels=c("D", "E", "F", "G"),label_size=9, vjust=0.3),
 ncol=1, rel_heights=c(0.1, 1.2, 0.05, 1))
 ,
-plot_grid(residplot2+ggtitle("Bleaching residuals")+theme(plot.title=element_text(size=8, hjust=0.5, face="bold")), heatplot2, ncol=1, rel_heights=c(1, 0.7), labels=c("C", "H"),label_size=9, vjust=c(1.5,0.5)),
+plot_grid(residplot3+ggtitle("Bleaching residuals")+theme(plot.title=element_text(size=8, hjust=0.7, face="bold"), panel.background=element_blank(), plot.background=element_blank()), heatplot2, ncol=1, rel_heights=c(1, 0.7), labels=c("C", "H"),label_size=9, vjust=c(1.5,0.5)),
 rel_widths=c(1, 0.4))+
 draw_text(x=0.17, y=0.98, text="Heatwave frequency", size=8, fontface="bold")+
 draw_text(x=0.49, y=0.98, text="Recovery interval", size=8, fontface="bold")+
@@ -257,6 +251,62 @@ fig3
 # ggsave("figs/fig3code.jpg", fig3, height=5, width=7.2)
 
 
+
+
+
+
+
+
+
+freqmapABS <- ggplot()+
+#geom_raster(data = sst.max, aes(x =longitude, y = latitude, fill = dhw))+
+#geom_sf(data=gbrmax24,  aes(col=dhw), size=0.05)+
+#geom_sf(data=bound2)+
+#geom_sf(data=gbr.sf,  lwd=0.1, col=alpha("grey40",0.8), fill=NA)+
+geom_sf(data=qld.sf, col="grey50", fill="grey95", size=0.01)+ 
+geom_point(data=freq.all, aes(X, Y, col=as.factor(aboveN)), size=0.01)+
+#scale_colour_viridis(option="B", discrete=T)+
+scale_color_manual(values=c("grey", "#fecc5c", "#fd8d3c", "#e31a1c", "#500000"))+
+#scale_color_manual(values=rev(c("#b35806", "#f1a340", "#d8daeb", "#998ec3","#542788")))+
+#geom_point(data=towns, aes(long, lat), shape=15, size=1)+
+#geom_text(data=towns, aes(long-0.25, lat, label=name), hjust=1, size=1.5, fontface="bold")+
+#geom_sf(data=bound2)+
+#ggtitle("heatwave frequency")+
+# scale_colour_distiller(palette="Spectral")+
+ #scale_colour_gradientn(colours = colz, values=colvals, limits=dhw.lims)+ # breaks=0
+ coord_sf(ylim=c(ylim[1]+2.5, ylim[2]-0.3), xlim=c(xlim[1], xlim[2]))+
+ labs(colour="N events\n(> 6 DHW)")+
+ guides(colour=guide_legend(override.aes=list(size=3)))+
+  scale_x_continuous(breaks=c(142, 146, 150, 154))+
+ theme_classic()+theme(axis.text=element_text(size=6),axis.title=element_blank(),  legend.key.width=unit(1.5, "mm"),legend.key.height=unit(5, "mm"), axis.line=element_blank(),   plot.title=element_text(size=9, hjust=0.1),legend.position=c(0.85, 0.75),legend.title=element_text(size=6, face="bold") )
+freqmapABS
+
+lastcols <- c(viridis(4, direction = -1, option = "D"), "grey")
+
+
+lastmapABS <- ggplot()+
+#geom_raster(data = sst.max, aes(x =longitude, y = latitude, fill = dhw))+
+#geom_sf(data=gbrmax24,  aes(col=dhw), size=0.05)+
+#geom_sf(data=bound2)+
+#geom_sf(data=gbr.sf,  lwd=0.1, col=alpha("grey40",0.8), fill=NA)+
+geom_sf(data=qld.sf, col="grey50", fill="grey95", size=0.01)+ 
+#geom_point(data=freqs[freqs$N==6,], aes(X, Y, col=aboveN), size=0.5)+
+#scale_colour_viridis(direction=-1, discrete=T)+
+scale_colour_manual(values=lastcols)+
+geom_point(data=freq.all, aes(X, Y), col="grey", size=0.01)+
+geom_point(data=time.all2, aes(X, Y, col=as.factor(last)), size=0.01)+
+ #geom_text(data=reefs2, aes(x=endlon+0.01, y= endlat2, label=Reef), hjust=0, size=1.8)+
+#geom_point(data=towns, aes(long, lat), shape=15, size=1)+
+#geom_text(data=towns, aes(long-0.25, lat, label=name), hjust=1, size=1.5, fontface="bold")+
+#geom_sf(data=bound2)+
+# scale_colour_distiller(palette="Spectral")+
+ #scale_colour_gradientn(colours = colz, values=colvals, limits=dhw.lims)+ # breaks=0
+ labs(colour="Years since\nlast event")+
+  guides(colour=guide_legend(override.aes=list(size=3)))+
+  scale_x_continuous(breaks=c(142, 146, 150))+
+  coord_sf(ylim=c(ylim[1]+2.5, ylim[2]-0.3), xlim=c(xlim[1]+0.2, xlim[2]+4))+
+ theme_classic()+theme(axis.text=element_text(size=6),axis.title=element_blank(),  legend.key.width=unit(1, "mm"),legend.key.height=unit(5, "mm"), axis.line=element_blank(),   plot.title=element_text(size=9, hjust=0.1),legend.position=c(0.85, 0.75),legend.title=element_text(size=6, face="bold") )
+lastmapABS
 
 
 

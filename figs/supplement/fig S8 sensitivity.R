@@ -27,37 +27,6 @@ theme_classic()+theme(legend.text=element_text(size=7), legend.title=element_tex
 bplot2
 
 
-dplot2 <- ggplot()+
-geom_ribbon(data=fit.dat3, aes(x=DHWs, ymax=((fit+se.fit)*100)-2, ymin=((fit-se.fit)*100)-2), fill=col16, col=NA, alpha=0.2)+
-geom_ribbon(data=fit.dat2, aes(x=max.dhw, ymax=((fit+se.fit)*100), ymin=((fit-se.fit)*100)), col=NA, alpha=0.2)+
-geom_point(data=j.av2, aes(DHWs, Mortality),col=col16, shape=4, size=1, stroke=0.3)+
-geom_line(data=fit.dat3, aes(x=DHWs, y=(fit*100)-2), col=col16)+
-geom_point(data=sites[sites$Zone=="Crest",], aes(max.dhw, pdead*100), shape=21, fill="black", size=0.5)+
-geom_text(data=NULL, aes(x=13.7, y=32, label="2016"), col=col16, size=3)+
-geom_text(data=NULL, aes(x=13.7, y=40, label="2024"), size=3)+
-labs(x="Degree Heating Weeks", y="% recent mortality")+
-geom_line(data=fit.dat2, aes(x=max.dhw, y=fit*100))+
-ggtitle("Coral mortality\n(Mar-Apr, 2024 vs 2016)")+
-scale_fill_viridis()+
-scale_x_continuous(limits=c(0,15), breaks=c(0,5,10,15))+
-theme_classic()+theme(axis.title=element_text(size=8), axis.line=element_line(size=0.2), plot.title=element_text(size=8, hjust=0.5, face="bold"))
-dplot2
-
-####################################
-
-head(tdf)
-
-acroplot <- ggplot(sites, aes(acro, pbleach*100))+ #[sites$Zone=="Crest"]
-geom_point(aes(fill=pbleach*100), shape=21)+
-scale_x_sqrt()+
-labs(x="% Acropora cover", y="% bleaching")+
-scale_fill_viridis(option="A")+guides(fill="none")+
-ggtitle("Acropora vs bleaching")+
-theme_classic()+theme(axis.title=element_text(size=8),plot.title=element_text(size=8, hjust=0.5, face="bold"))
-acroplot
-
-mods2 <- mods[mods$x2 %in% c("Tabular Acropora","Acroporidae","Pocilliporidae","Poritidae", "NMDS1", "NMDS2"),]
-
 effplot <- ggplot()+
 geom_vline(xintercept=0)+
 geom_bar(data=mods2, aes(x=slp, y=reorder(x2, -slp)), stat="identity", fill="grey", col="black", size=0.1, width=0.7)+
@@ -81,26 +50,60 @@ labs(x="Effect size on\nbleaching residuals", y="")+
 theme_classic()+theme(strip.background=element_blank(), axis.title=element_text(size=8), plot.title=element_text(size=8, hjust=0.5, face="bold"), plot.background=element_blank(), panel.background=element_blank())
 effplot2
 
-####################################
 
-recplot <- ggplot()+
-geom_hline(yintercept=0, col="grey")+geom_vline(xintercept=0, col="grey")+
-geom_point(data=acro, aes(x=change, y=resids), size=1)+
-geom_smooth(data=acro, aes(x=change, y=resids), method="lm", col="red", size=0.35, formula=y~poly(x,1), alpha=0.15)+
-geom_text(data=NULL, aes(-28, 0.7, label="Heron Is."), size=3)+
-geom_text(data=NULL, aes(38, 1.3, label="Lizard Is."), size=3)+
-#geom_text(data=acro, aes(x=change, y=resids, label=reef))+
-geom_segment(data=NULL, aes(x=34,xend=40, y=1.25,yend=1.05), size=0.24, col="grey")+
-geom_segment(data=NULL, aes(x=-20,xend=-30, y=0.22,yend=0.55), size=0.24, col="grey")+
-geom_segment(data=acro, aes(x=change, xend=change, y=resids-resids.se, yend=resids+resids.se))+
-theme_classic()+theme(axis.text=element_text(size=8), axis.title=element_text(size=8))+
-labs(x="Change in % Acropora\n(2016-2024)", y="deviation from expected\nbleaching (2024)")
-recplot
+f1 <- ggplot()+
+geom_boxplot(data=sres[sres$Zone=="Crest",], aes(as.factor(freq2),fill=as.factor(freq2), betamod), outlier.size=0.05, size=0.1,position = position_dodge2(preserve = "single"), alpha=0.5)+ #,fill="grey95"
+stat_summary(data=tres[tres$Zone=="Crest",], aes(as.factor(freq2), betamod, group=as.factor(n)),geom="line",show_guide=F)+
+stat_summary(data=tres[tres$Zone=="Crest",], aes(as.factor(freq2), fill=as.factor(freq2), betamod),size=0.65,show_guide=F, shape=21, stroke=0.3)+
+coord_cartesian(xlim=c(1,5.7))+
+#scale_fill_viridis(discrete=T)+
+scale_fill_manual(values=c("grey", "#fecc5c", "#fd8d3c", "#e31a1c", "#500000"))+
+#geom_text(data=andat[andat$y=="betamod" & andat$Zone=="Crest",], aes(x=5.5, y=y4b, label=sig), fontface="bold", hjust=0, show_guide = FALSE, size=4)+
+guides(fill="none")+
+labs(x="N events > 6 DHW\n(2016-2023)", y="Bleaching residuals\n(quasibinomial)")+
+theme_classic()+theme
+f1
 
-####################################
 
-fig2 <- plot_grid(plot_grid(bplot2, dplot2, labels=c("A", "B"), label_size=9), plot_grid(effplot+theme(axis.line=element_line(size=0.25)), recplot+ggtitle("Compositional change\nvs bleaching")+theme(axis.line=element_line(size=0.25), plot.title=element_text(size=8, face="bold", hjust=0.5)), rel_widths=c(1,1.2),labels=c("C", "D"), label_size=9), ncol=1, rel_heights=c(1, 1.1))
-fig2
+
+lastcols <- rev(scales::viridis_pal()(4))
+lastcols
+
+x1 <- ggplot()+
+geom_boxplot(data=sres[sres$Zone=="Crest",],aes(as.factor(last2), betamod, fill=as.factor(last2)), outlier.size=0.05, size=0.1,position = position_dodge2(preserve = "single"), alpha=0.5)+ # fill="grey95"
+stat_summary(data=tres[tres$Zone=="Crest",], aes(as.factor(last2), betamod,  group=1),geom="line")+
+stat_summary(data=tres[tres$Zone=="Crest",], aes(as.factor(last2), betamod,fill=last2), size=0.55, shape=21, stroke=0.3)+
+#scale_fill_viridis(discrete=T, direction=-1)+
+scale_fill_manual(values=c(lastcols[1:3], "grey"))+
+labs(x="Years since last\nevent > 6 DHW", y="Bleaching residuals\n(quasibinomial)")+
+#facet_wrap(~Zone)+
+guides(fill="none")+
+#geom_text(data=andat2b[andat2b$y=="betamod",], aes(x=4.5, y=y4b, label=sig, size=sz), 
+#fontface="bold", hjust=0, show_guide = FALSE)+
+scale_size_manual(values=c(4))+guides(size="none")+
+coord_cartesian(xlim=c(1,4.7))+
+scale_colour_manual(values=c("#feb24c", "#de2d26", "black"))+
+theme_classic()+theme
+x1
+
+p2 <- ggplot()+
+geom_hline(yintercept=0, size=0.1)+
+#geom_smooth(data=dfm2, aes(dhw, change_use, col=year), method="lm", formula=y~poly(x,2), size=0.4, show.legend=FALSE)+
+geom_line(data=fit16.2, aes(dhw, fit), col=col16)+
+geom_ribbon(data=fit16.2, aes(x=dhw, ymin=fit-(se*1.95), ymax=fit+(se*1.95)), alpha=0.2, fill=col16)+
+geom_line(data=fit24.2, aes(max.dhw, fit), col="black")+
+geom_ribbon(data=fit24.2, aes(x=max.dhw, ymin=fit-(se*1.95), ymax=fit+(se*1.95)), alpha=0.2)+
+geom_point(data=dfm2, aes(dhw, change_use, col=year, shape=year), size=1, stroke=0.3)+
+labs(x="DHW (°C Weeks)", y="Change in coral cover (%)")+
+scale_y_continuous(breaks=brks, labels=labs)+
+scale_colour_manual(values=c(col16, "black"))+
+scale_shape_manual(values=c(4, 16))+
+theme_classic()+mtheme
+p2
+
+plot_grid(
+plot_grid(bplot2, effplot+theme(axis.line=element_line(size=0.25)), labels=c("A", "B")),
+plot_grid(f1, x1, p2, nrow=1, rel_widths=c(1,1,2), labels=c("C", "D","E")),ncol=1)
 
 #   ggsave("figs/fig2code.jpg", fig2, height=6.2, width=5.3)
 

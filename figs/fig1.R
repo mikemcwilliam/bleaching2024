@@ -41,14 +41,14 @@ p2a
 # ACROPORA
 #######################################
 
-comp1R$tlab <- factor(comp1R$tlab, levels=rev(c("2016a", "2016b", "2024")))
+comp1R$tlab <- factor(comp1R$tlab, levels=rev(c("2016a", "2016b", "2024a")))
 
 tabbox2 <- ggplot()+
 geom_boxplot(data=comp1R[comp1R$align %in% c("tabular_Acropora"),], aes(x=cov, y=tlab, fill=tlab), outlier.size=0.1, size=0.2)+
 scale_fill_manual(values=c("black", "red", "grey"))+
 guides(fill="none")+
 scale_x_sqrt()+
-xlab("% tabular Acropora")+
+xlab(expression(paste("% tabular ", italic("Acropora"), " cover")))+
 theme_classic()+theme(axis.title.y=element_blank(), axis.line=element_line(size=0.2),axis.title.x=element_text(size=8))
 
 acbox2 <- ggplot()+
@@ -56,7 +56,7 @@ geom_boxplot(data=comp1.acR, aes(x=cov, y=tlab, fill=tlab), outlier.size=0.1, si
 scale_fill_manual(values=c("black", "red", "grey"))+
 guides(fill="none")+
 scale_x_sqrt()+
-xlab("% Acropora")+
+xlab(expression(paste("% ", italic("Acropora"), " cover")))+
 theme_classic()+theme(axis.title.y=element_blank(), axis.line=element_line(size=0.2), axis.title.x=element_text(size=8))
 
 plot_grid(acbox2, tabbox2)
@@ -91,29 +91,31 @@ mdsvectors$lab2[mdsvectors$lab2=="staghorn_Acropora"] <- "staghorn Acropora"
 mdsvectors$lab2[mdsvectors$lab2=="tabular_Acropora"] <- "tabular Acropora" 
 mdsvectors$lab2[mdsvectors$lab2=="other_Acropora"] <- "other Acropora" 
 mdsvectors$lab2[mdsvectors$lab2=="other_scleractinians"] <- "other scleractinians" 
+mdsvectors$lab2[mdsvectors$lab2=="soft"] <- "Soft coral" 
 
 
 mdsvectors$MDS2b <- mdsvectors$MDS2
-mdsvectors$MDS2b[mdsvectors$lab2 =="Lobophyllidae" ] <- mdsvectors$MDS2b[mdsvectors$lab2 =="Lobophyllidae" ] - 0.02
-mdsvectors$MDS2b[mdsvectors$lab2 =="Isopora" ] <- mdsvectors$MDS2b[mdsvectors$lab2 =="Isopora" ] + 0.03
-mdsvectors$MDS2b[mdsvectors$lab2 =="other Acropora"  ] <- mdsvectors$MDS2b[mdsvectors$lab2 =="other Acropora" ] + 0.05
-mdsvectors$MDS2b[mdsvectors$lab2 =="other scleractinians"  ] <- mdsvectors$MDS2b[mdsvectors$lab2 =="other scleractinians" ] + 0
-mdsvectors$MDS2b[mdsvectors$lab2 =="Poritidae"  ] <- mdsvectors$MDS2b[mdsvectors$lab2 =="Poritidae" ] - 0.02
+mdsvectors$MDS2b[mdsvectors$lab2 =="Lobophyllidae" ] <- mdsvectors$MDS2b[mdsvectors$lab2 =="Lobophyllidae" ] + 0.06
+mdsvectors$MDS2b[mdsvectors$lab2 =="Seriatopora" ] <- mdsvectors$MDS2b[mdsvectors$lab2 =="Seriatopora" ] -0.04
+mdsvectors$MDS2b[mdsvectors$lab2 =="Merulinidae"  ] <- mdsvectors$MDS2b[mdsvectors$lab2 =="Merulinidae" ]  +0.015
+mdsvectors$MDS2b[mdsvectors$lab2 =="other Acropora"  ] <- mdsvectors$MDS2b[mdsvectors$lab2 =="other Acropora" ]  -0.02
+mdsvectors$MDS2b[mdsvectors$lab2 =="other scleractinians"  ] <- mdsvectors$MDS2b[mdsvectors$lab2 =="other scleractinians" ] - 0.04
+mdsvectors$MDS2b[mdsvectors$lab2 =="Poritidae"  ] <- mdsvectors$MDS2b[mdsvectors$lab2 =="Poritidae" ] + 0.02
 mdsvectors$MDS1b <- mdsvectors$MDS1
-mdsvectors$MDS1b[mdsvectors$lab2 =="Pocillopora"  ] <- mdsvectors$MDS1b[mdsvectors$lab2 =="Pocillopora" ] + 0.06
+#mdsvectors$MDS1b[mdsvectors$lab2 =="Pocillopora"  ] <- mdsvectors$MDS1b[mdsvectors$lab2 =="Pocillopora" ] + 0.06
 
 tcols <- c("grey55", "red", "black")
 
 vecplot <- ggplot()+
 geom_segment(data=mdsvectors, aes(x=0, xend=MDS1, y=0, yend=MDS2), col="grey")+
 #geom_label(data=mdsvectors, aes(MDS1, MDS2b, label=lab2), hjust=ifelse(mdsvectors$MDS1 >0, 0, 1), size=2.5, fontface="bold", label.size=NA, alpha=0.8)+
-geom_text(data=mdsvectors, aes(MDS1b, MDS2b, label=lab2), hjust=ifelse(mdsvectors$MDS1b >0, 0, 1), size=2.5, fontface="bold")+
-annotation_custom(tab, xmin=-1.1, xmax=-0.3, ymin=-0.6, ymax=-0.4)+
-annotation_custom(stag, xmin=-1.9, xmax=-1.2, ymin=-0.5, ymax=-0.3)+
-annotation_custom(poc, xmin=-0.1, xmax=0.6, ymin=-0.45, ymax=-0.25)+
-annotation_custom(pori, xmin=0.6, xmax=1.2, ymin=0.65, ymax=0.85)+
-annotation_custom(mas, xmin=0.6, xmax=1.2, ymin=0.25, ymax=0.4)+
-lims(x=c(-2.5, 1.8), y=c(-0.8,0.8))+
+geom_text(data=mdsvectors, aes(MDS1b, MDS2b, label=lab2), hjust=ifelse(mdsvectors$MDS1b >0, 0, 1), size=2.3, fontface="bold")+
+annotation_custom(mas, xmin=-2, xmax=-1, ymin=0, ymax=0.2)+
+annotation_custom(pori, xmin=-1.9, xmax=-1.1, ymin=-0.5, ymax=-0.2)+
+annotation_custom(poc, xmin=-0.6, xmax=0.2, ymin=-0.45, ymax=-0.25)+
+annotation_custom(stag, xmin=0.6, xmax=1.2, ymin=0.45, ymax=0.75)+
+annotation_custom(tab, xmin=1.1, xmax=1.8, ymin=0.35, ymax=0.55)+
+lims(x=c(-2.3, 2), y=c(-0.8,0.8))+
 theme_bw()+guides(size="none")+theme_void()+theme(plot.margin=margin(10,10,10,10))
 vecplot
 
@@ -121,48 +123,55 @@ vecplot
 arrowplot <- ggplot()+
 #geom_point(data=mdspoints, aes(NMDS1, NMDS2, fill=as.factor(Time)), shape=21)+
 geom_path(data=mdspoints[mdspoints$t %in% c("Apr16", "Oct16"),], aes(x=NMDS1, y=NMDS2, group=Reef), col="grey", arrow=arrow(length=unit(0.5, "mm")), size=0.4)+
-geom_text(data=NULL, aes(x=-1.5, y=-1.23, label="Mass mortality (2016)"), col='grey50', size=2.3, hjust=0, fontface="bold")+ #-1
+geom_text(data=NULL, aes(x=-1.8, y=-0.88, label="Mass mortality (2016)"), col='grey50', size=2.3, hjust=0, fontface="bold")+ #-1
 #geom_text(data=NULL, aes(x=-1.5, y=-1.1, label="Mass mortality (2016)"), col='red', size=2.3, hjust=0, fontface="bold")+
-geom_text(data=NULL, aes(x=-1.5, y=-1.4, label="Reassembly (2016-2024)"), col='black', size=2.3, hjust=0, fontface="bold")+ #-1.15
+geom_text(data=NULL, aes(x=-1.8, y=-1, label="Reassembly (2016-2024)"), col='black', size=2.3, hjust=0, fontface="bold")+ #-1.15
 #geom_path(data=mdspoints[mdspoints$Time %in% c(1, 2) & mdspoints$Reef %in% time3$Reef,], aes(x=NMDS1, y=NMDS2, group=Reef), col="red")+
-geom_path(data=mdspoints[mdspoints$t %in% c("Oct16","Mar24"),], aes(x=NMDS1, y=NMDS2, group=Reef), col="black", arrow=arrow(length=unit(0.5, "mm"), ends="first"))+
-lims(x=c(-1.5, 2), y=c(-1.4, 1.2))+  #y=c(-1.2, 1)
+geom_path(data=mdspoints[mdspoints$t %in% c("Apr16","Apr24"),], aes(x=NMDS1, y=NMDS2, group=Reef), col="black", arrow=arrow(length=unit(0.5, "mm"), ends="last"))+
+lims(x=c(-1.8, 1.3), y=c(-1, 0.9))+
 #scale_colour_manual(values=rcols)+
 theme_bw()+guides(size="none")+theme(legend.position=c(0.1, 0.9), legend.title=element_blank(), panel.grid.minor=element_blank(),panel.grid.major=element_blank(), axis.title=element_text(size=7),axis.text=element_text(size=7))+guides(size="none", col="none", fill="none")
-arrowplot 
+arrowplot
+
+# original  lims(x=c(-1.5, 2), y=c(-1.4, 1.2))
+
+collys <- c("grey", "red", "black")
+names(collys)<-c("Apr16", "Oct16", "Apr24")
+
 
 densplot <- ggplot()+
 #stat_density_2d(data=mdspoints, aes(NMDS1, NMDS2, fill=as.factor(Time)), breaks=c(0.15), geom="polygon", alpha=0.25)+
 #stat_density_2d(data=mdspoints, aes(NMDS1, NMDS2, fill=as.factor(Time)), breaks=c(0.75), geom="polygon", alpha=0.25)+
-lims(x=c(-1.5, 2), y=c(-1.4, 1.2))+ #y=c(-1.2, 1)
-#stat_ellipse(data=mdspoints[mdspoints$Time %in% c(2),], aes(NMDS1, NMDS2, col=as.factor(Time)), geom="polygon", alpha=0.25, fill="red")+
-stat_ellipse(data=mdspoints[mdspoints$t %in% c("Apr16", "Mar24"),], aes(NMDS1, NMDS2, fill=as.factor(t), col=as.factor(t)), geom="polygon", alpha=0.25)+
-#geom_path(data=mdspoints[mdspoints$Time %in% c(2,3),], aes(x=NMDS1, y=NMDS2, group=Reef), col="black", arrow=arrow(length=unit(1, "mm")), size=0.2)+
 geom_point(data=mdspoints, aes(NMDS1, NMDS2, fill=as.factor(t)), shape=21, size=1, stroke=0.1)+
+lims(x=c(-1.8, 1.3), y=c(-1, 0.9))+ #y=c(-1.2, 1)
+#stat_ellipse(data=mdspoints[mdspoints$Time %in% c(2),], aes(NMDS1, NMDS2, col=as.factor(Time)), geom="polygon", alpha=0.25, fill="red")+
+stat_ellipse(data=mdspoints[mdspoints$t %in% c("Apr16", "Apr24"),], aes(NMDS1, NMDS2, fill=as.factor(t), col=as.factor(t)), geom="polygon", alpha=0.25, level=0.5)+
+stat_ellipse(data=mdspoints[mdspoints$t %in% c("Apr16", "Apr24"),], aes(NMDS1, NMDS2, col=as.factor(t)), geom="polygon",  level=0.9, fill=NA, size=0.25)+
+#geom_path(data=mdspoints[mdspoints$Time %in% c(2,3),], aes(x=NMDS1, y=NMDS2, group=Reef), col="black", arrow=arrow(length=unit(1, "mm")), size=0.2)+
 #geom_path(data=avs, aes(x=NMDS1, y=NMDS2),   size=1, arrow=arrow(length=unit(1, "mm")))+
-geom_text(data=NULL, aes(x=-1.5, y=-1.1, label="2016 - pre-bleaching"), col='grey50', size=2.3, hjust=0, fontface="bold")+ #-0.93
-geom_text(data=NULL, aes(x=-1.5, y=-1.25, label="2016 - post-bleaching"), col="red",size=2.3, hjust=0, fontface="bold")+ #-1.06
-geom_text(data=NULL, aes(x=-1.5, y=-1.4, label="2024 - pre-bleaching"), col='black', size=2.3, hjust=0, fontface="bold")+ # -1.2
-scale_colour_manual(values=c("grey", "black","red"))+scale_fill_manual(values=c("grey", "black","red"))+
+geom_text(data=NULL, aes(x=-1.8, y=-0.8, label="2016 - pre-bleaching"), col='grey50', size=2.3, hjust=0, fontface="bold")+ #-0.93
+geom_text(data=NULL, aes(x=-1.8, y=-0.9, label="2016 - post-bleaching"), col="red",size=2.3, hjust=0, fontface="bold")+ #-1.06
+geom_text(data=NULL, aes(x=-1.8, y=-1, label="2024 - pre-bleaching"), col='black', size=2.3, hjust=0, fontface="bold")+ # -1.2
+scale_colour_manual(values=collys )+
+scale_fill_manual(values=collys )+
 theme_bw()+guides(size="none")+theme(legend.position=c(0.1, 0.9), legend.title=element_blank(), panel.grid.minor=element_blank(),panel.grid.major=element_blank(), axis.title=element_text(size=7),axis.text=element_text(size=7))+guides(size="none", col="none", fill="none")
 densplot
 
 
 # fig 1 
 
-
 two2 <- plot_grid(get_legend(p1+theme(legend.direction="horizontal")),
 plot_grid(p1+guides(fill="none"), p2a+guides(fill="none")), ncol=1, rel_heights=c(0.1, 1))
 
 fig1 <- plot_grid(NULL, 
-plot_grid(plot_grid(NULL, map24c, ncol=1, rel_heights=c(-0.05, 1), labels=c("", "A"), label_size=9), NULL,
+plot_grid(plot_grid(NULL, map24d, ncol=1, rel_heights=c(-0.05, 1), labels=c("", "A"), label_size=9), NULL,
 plot_grid(
 plot_grid(NULL, acbox2+theme(axis.text.y=element_text(size=7.5)),tabbox2+theme(axis.text.y=element_text(size=7.5)), labels=c("B", ""), label_size=9, rel_widths=c(0.07, 1, 1), nrow=1), 
 plot_grid(densplot, arrowplot, nrow=1, labels=c("C", "D"), label_size=9), 
 ncol=1, rel_heights=c(0.4, 1)), 
 nrow=1, rel_widths=c(1, 0.1, 1.5))
 ,NULL,
-plot_grid(dhwreefs+guides(fill="none"),   two2, vecplot, nrow=1, rel_widths=c(0.9,1.3,1.5), labels=c("E", "F", ""), label_size=9), 
+plot_grid(dhwreefs+guides(fill="none"),   two2, vecplot, nrow=1, rel_widths=c(0.9,1.3,1.5), labels=c("E", "F", "G"), label_size=9, hjust=c(-0.5,-0.5,-3)), 
 ncol=1, rel_heights=c(0.05, 1,0.1,  0.8))+
 #draw_text(text="Compositional change", y=0.985, x=0.72, fontface="bold", size=10)+
 #draw_text(text="2024 surveys", y=0.955, x=0.2, fontface="bold", size=10)+
