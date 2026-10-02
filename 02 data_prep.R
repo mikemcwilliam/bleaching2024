@@ -108,8 +108,6 @@ tdf$sand[is.na(tdf$sand)]<-0
 tdf$rubble[is.na(tdf$rubble)]<-0
 head(tdf)
 
-# no data? 
-
 tdf <- tdf[!tdf$Transect_pit  %in% c("124_B2_C2"),] # NO BLEACHING TRANSECT (ONLY PIT)
 tdf <- tdf[!tdf$Transect_Code  %in% c("THE_B1_C3"),] # NO BLEACHING TRANSECT (ONLY PIT)
 
@@ -235,7 +233,6 @@ tdf$nbleach <- nbleach$value[match(tdf$obs, nbleach$obs)]
 tdf$nbleach[is.na(tdf$nbleach)] <- 0
 tdf$nbleachSC <- nbleachSC$value[match(tdf$obs, nbleachSC$obs)]
 tdf$nbleachSC[is.na(tdf$nbleachSC)] <- 0
-#length(unique(nbleach$obs))
 head(tdf)
 
 # total dead
@@ -248,7 +245,6 @@ length(unique(ndead$obs))
 tdf$pdead <- tdf$ndead/tdf$Ncoral
 tdf$pbleach <- tdf$nbleach/tdf$Ncoral
 head(tdf)
-
 
 # --------------------------------- # composition 2024
 head(pit)
@@ -303,8 +299,6 @@ tdf[is.na(tdf$Region),] #124_B2_C2 missed in trans?
 
 rnames <- read.csv("data/data2016/reefnames.csv")
 head(rnames)
-
-# Why are there errors? Dugong April?
 
 idvars <- c("date", "observer" ,"reef_name","ReefNo","site", "depth", "transect_no","taxa")
 
@@ -397,9 +391,6 @@ unique(pit[,c("variable", "align")])
 head(pit)
 head(comp16)
 
-#pit <- aggregate(value~align+Zone+Transect+Site+Reef+REGION, pit[!is.na(pit$align),], sum)
-#pit <- pit[pit$Zone=="Crest",]
-#head(pit)
 
 pit$reef <- rnames$use[match(pit$Reef, rnames$r24)]
 pit$reef <- ifelse(is.na(pit$reef), pit$Reef, pit$reef)
@@ -427,9 +418,6 @@ tdf$Survey
 
 
 # --------------------------------- # edit regions
-
-
-
 
 
 unique(tdf$Region)

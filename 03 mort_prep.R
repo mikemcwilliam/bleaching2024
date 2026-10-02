@@ -70,7 +70,7 @@ dfm$Reef <- chk2$Reef[match(dfm$ReefID, chk2$ReefID)]
 plot_grid(ggplot(dfm, aes(x=bl, y=change))+geom_point()+geom_smooth(),
 ggplot(dfm, aes(x=dhw, y=change))+geom_point()+geom_smooth())
 
-# --------------------------------- #  mort
+# --------------------------------- #  other 2016 data
 
 # we can get the exact before/after cover from this. 
 rnames <- read.csv("data/data2016/reefnames.csv")
@@ -157,25 +157,6 @@ geom_point(data=smort, aes(Lchange, Achange), col="red")+geom_line(data=logform,
 
 ggplot()+geom_point(data=dfm, aes(Achange, Lchange))+geom_line(data=satform, aes( abs, log))
 
-# --------------------------------- # combine data
-
-ggplot(smort, aes(as.factor(tlast), Lchange))+geom_boxplot()
-
-sd(smort$acro, na.rm=T)
-mean(smort$acro)
-# check independence
-
-c1 <- rnorm(100, 36, 17) # coral cover 1
-c2 <- rnorm(100, 27, 12) # coral cover 2
-AC <- rnorm(100, 24, 20) # acropora cover
-log_change <- log10(c2/c1)
-AC_relative <- AC/c1
-
-ggplot(data=NULL, aes(c1, log_change))+geom_point()+geom_smooth()
-summary(lm(log_change~AC)) # cover 1 not independent
-
-ggplot(data=NULL, aes(AC, log_change))+geom_point()+geom_smooth()
-summary(lm(log_change~AC)) 
 
 # --------------------------------- # combine data? 
 

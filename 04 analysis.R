@@ -67,8 +67,8 @@ ggplot(sites, aes(x=max.dhw, y=pbleach, col=region2))+geom_point()+facet_wrap(~Z
 
 source("figs/map.R")
 #mapplot
-#aboveNplot
 map24d
+# figS2
 
 # --------------------------------- # heat stress history
 
@@ -222,10 +222,14 @@ geom_text(data=mdsvectors, aes(MDS1, MDS2, label=lab2), hjust=ifelse(mdsvectors$
 source("figs/fig1.R")
 fig1
 
+#   ggsave("figs/fig1code.jpg",fig1,height=5.5, width=7)
+
 # --------------------------------- # supplement
 
 source("figs/supplement/figS1 cov change.R")
 FigS1
+
+#   ggsave( "figs/supplement/figS1code.jpg",FigS1,height=7, width=11)
 
 # --------------------------------- # model bleaching
 
@@ -394,7 +398,7 @@ crestdat$diff <- crestdat$pbleach2 - crestdat$fit
 
 # --------------------------------- # who's above?
 
-crestdat2 <- crestdat #tdf[tdf$Zone %in% "Crest",]
+crestdat2 <- crestdat 
 check16 <- na.omit(data.frame(DHWs=crestdat2$max.dhw, Reef=crestdat2$Reef, region2=crestdat2$region2, pbleach=crestdat2$pbleach*100))
 dev16 <- cbind(check16, data.frame(predFit(mod16, newdata = check16, interval = "confidence", level= 0.95)))
 head(dev16)
@@ -598,13 +602,19 @@ labs(x="Change in % Acropora\n(2016-2024)", y="deviation from expected\nbleachin
 source("figs/fig2.R")
 fig2
 
+#   ggsave("figs/fig2code.jpg", fig2, height=6.2, width=5.3)
+
+
 # --------------------------------- # supplement
 
 source("figs/supplement/figS4 nmds.R")
 figS4
 
+#     ggsave( "figs/supplement/figS4.jpg",figS4, height=6, width=6)
+
 source("figs/supplement/figS5 hughes21.R")
 figS5
+
 
 # --------------------------------- # heatwave history (maps)
 
@@ -747,6 +757,9 @@ fig3
 source("figs/supplement/FigS7 frequency.R")
 figS7
 
+#     ggsave( "figs/supplement/figS7.jpg",figS7, height=9, width=6)
+
+
 # --------------------------------- # long-term mortality
 
 lmort <- read.csv("data/mortality.csv")
@@ -855,8 +868,7 @@ geom_point(data=lmort, aes(acro2, change_use, col=year, shape=year), size=1, str
 labs(x=expression(paste("Initial ", italic("Acropora"), " cover")), y="Change in coral cover (%)")+
 scale_y_continuous(breaks=brks, labels=labs)
 
-
-######## NEW TLAST
+# recovery time - mortality
 
 head(m24)
 head(sites)
@@ -885,12 +897,19 @@ fig4
 # --------------------------------- # supplement
 
 source("figs/supplement/FigS3 zones.R")
-FigS3
+figS3
+
+#     ggsave( "figs/supplement/figS3.jpg",figS3, height=6, width=7)
+
 
 source("figs/supplement/FigS6 residuals.R")
 figS6
 
+#     ggsave( "figs/supplement/figS6.jpg",figS6, height=6, width=8)
+
+
 source("figs/supplement/figS8 sensitivity.R")
 figS8
 
+#     ggsave( "figs/supplement/figS8.jpg",figS8, height=6, width=8)
 

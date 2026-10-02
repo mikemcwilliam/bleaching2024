@@ -383,8 +383,8 @@ geom_sf(data=qld.sf, col="grey50", fill=NA, size=0.01)+ # grey90
 aboveNplot2 <- plot_grid(map16a+guides(col="none"),NULL, map17a+guides(col="none"),NULL,map20a+guides(col="none"),NULL, map22a+guides(col="none"), NULL,map24e+guides(col="none"),NULL, nrow=1, rel_widths=c(1.1,-0.65, 1,-0.65, 1,-0.65,1, -0.65,1, -0.12))
 
 
-figS3 <- plot_grid(mapplot, aboveNplot2, ncol=1, labels=c("A", "B"),label_size=9)
-figS3
+figS2 <- plot_grid(mapplot, aboveNplot2, ncol=1, labels=c("A", "B"),label_size=9)
+figS2
 
 #   ggsave( "figs/supplement/figS3.jpg",figS3,height=5.5, width=6)
 

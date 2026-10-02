@@ -96,11 +96,10 @@ zones5
 
 
 
-figS4 <- plot_grid(plot_grid(zones1+guides(col="none"), 
+figS3 <- plot_grid(plot_grid(zones1+guides(col="none"), 
 zones2+guides(col="none", fill="none"), 
 zones4+guides(col="none"),
 zones5+guides(col="none"),
 nrow=2,  labels=c("A", "B", "C", "D"), align="hv", label_size=9), get_legend(zones1), rel_widths=c(1,0.2))
-figS4
+figS3
 
-#     ggsave( "figs/supplement/figS4.jpg",figS4, height=6, width=6)
